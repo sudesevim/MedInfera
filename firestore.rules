@@ -1,0 +1,51 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Kullanıcılar koleksiyonu - sadece kendi verilerine erişebilirler
+    match /users/{userId} {
+      // Kullanıcı sadece kendi profilini okuyabilir ve yazabilir
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+      
+      // Kullanıcının sağlık verileri alt koleksiyonu
+      match /healthData/{healthDataType} {
+        // Kullanıcı sadece kendi sağlık verilerine erişebilir
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      
+      // Kullanıcının acil durum kişileri alt koleksiyonu
+      match /emergencyContacts/{contactId} {
+        // Kullanıcı sadece kendi acil durum kişilerine erişebilir
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      
+      // Kullanıcının semptom tarama sonuçları alt koleksiyonu
+      match /symptomScreenings/{screeningId} {
+        // Kullanıcı sadece kendi semptom tarama sonuçlarına erişebilir
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      
+      // Kullanıcının ilaçları alt koleksiyonu
+      match /medications/{medicationId} {
+        // Kullanıcı sadece kendi ilaçlarına erişebilir
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      
+      // Kullanıcının chatbot mesajları alt koleksiyonu
+      match /chatMessages/{messageId} {
+        // Kullanıcı sadece kendi chat mesajlarına erişebilir
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      
+      // Kullanıcının konuşma geçmişi alt koleksiyonu
+      match /conversations/{conversationId} {
+        // Kullanıcı sadece kendi konuşma geçmişine erişebilir
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+    }
+    
+    // Diğer tüm koleksiyonlar varsayılan olarak erişime kapalı
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
