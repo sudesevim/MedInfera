@@ -54,7 +54,7 @@ export const MainTabNavigator: React.FC = () => {
           marginBottom: 2,
         },
         headerStyle: {
-          backgroundColor: colors.primary[800],
+          backgroundColor: colors.primary[600],
           borderBottomWidth: 0,
         },
         headerTitleStyle: {

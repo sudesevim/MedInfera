@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 4,
   },
   addButtonLarge: {
-    backgroundColor: '#3b82f6',
+    backgroundColor: colors.mint.primary,
     borderRadius: 8,
     paddingHorizontal: 24,
     paddingVertical: 12,

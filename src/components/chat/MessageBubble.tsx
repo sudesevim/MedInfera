@@ -8,6 +8,7 @@ import {
   StyleSheet,
   TouchableOpacity,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 import { ChatMessage } from '../../types/chatbot.types';
 import { colors } from '../../theme';
 
@@ -30,102 +31,95 @@ export const MessageBubble: React.FC<MessageBubbleProps> = React.memo(({
     
     // If today, show only time
     if (messageDate.toDateString() === now.toDateString()) {
-      return messageDate.toLocaleTimeString('tr-TR', {
-        hour: '2-digit',
+      return messageDate.toLocaleTimeString('en-US', {
+        hour: 'numeric',
         minute: '2-digit',
+        hour12: true,
       });
     }
     
     // If this week, show day and time
     const daysDiff = Math.floor((now.getTime() - messageDate.getTime()) / (1000 * 60 * 60 * 24));
     if (daysDiff < 7) {
-      return messageDate.toLocaleDateString('tr-TR', {
+      return messageDate.toLocaleDateString('en-US', {
         weekday: 'short',
-        hour: '2-digit',
+        hour: 'numeric',
         minute: '2-digit',
+        hour12: true,
       });
     }
     
     // Otherwise show full date
-    return messageDate.toLocaleDateString('tr-TR', {
-      day: '2-digit',
-      month: '2-digit',
-      hour: '2-digit',
+    return messageDate.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      hour: 'numeric',
       minute: '2-digit',
+      hour12: true,
     });
   };
 
-  const getMessageIcon = (): string => {
+  const getMessageIconName = (): string | null => {
     switch (message.messageType) {
       case 'emergency':
-        return '🚨';
+        return 'alert-circle';
       case 'medication_reminder':
-        return '💊';
+        return 'medical';
       case 'health_insight':
-        return '📊';
+        return 'stats-chart';
       default:
-        return '';
+        return null;
     }
   };
 
-  const getStatusIcon = (): string => {
-    if (!isCurrentUser) return '';
+  const getStatusIconName = (): string | null => {
+    if (!isCurrentUser) return null;
     
     switch (message.status) {
       case 'sending':
-        return '⏳';
+        return 'time-outline';
       case 'sent':
-        return '✓';
+        return 'checkmark';
       case 'delivered':
-        return '✓✓';
+        return 'checkmark-done';
       case 'read':
-        return '✓✓';
+        return 'checkmark-done';
       case 'error':
-        return '❌';
+        return 'close-circle';
       default:
-        return '';
+        return null;
     }
   };
 
   const getBubbleStyle = () => {
-    const baseStyle = [styles.bubble];
-    
     if (isCurrentUser) {
-      baseStyle.push(styles.userBubble);
-    } else {
-      baseStyle.push(styles.botBubble);
-      
-      // Special styling for different message types
-      switch (message.messageType) {
-        case 'emergency':
-          baseStyle.push(styles.emergencyBubble);
-          break;
-        case 'medication_reminder':
-          baseStyle.push(styles.medicationBubble);
-          break;
-        case 'health_insight':
-          baseStyle.push(styles.healthInsightBubble);
-          break;
-      }
+      return [styles.bubble, styles.userBubble];
     }
     
-    return baseStyle;
+    // Bot messages with special types
+    const botStyles = [styles.bubble, styles.botBubble];
+    
+    switch (message.messageType) {
+      case 'emergency':
+        return [...botStyles, styles.emergencyBubble];
+      case 'medication_reminder':
+        return [...botStyles, styles.medicationBubble];
+      case 'health_insight':
+        return [...botStyles, styles.healthInsightBubble];
+      default:
+        return botStyles;
+    }
   };
 
   const getTextStyle = () => {
-    const baseStyle = [styles.messageText];
-    
     if (isCurrentUser) {
-      baseStyle.push(styles.userText);
-    } else {
-      baseStyle.push(styles.botText);
+      return [styles.messageText, styles.userText];
     }
-    
-    return baseStyle;
+    return [styles.messageText, styles.botText];
   };
 
   const renderMessageContent = () => {
-    const icon = getMessageIcon();
+    const iconName = getMessageIconName();
     const content = message.content;
     
     console.log('💬 MessageBubble: Rendering content:', {
@@ -141,9 +135,12 @@ export const MessageBubble: React.FC<MessageBubbleProps> = React.memo(({
     if (message.messageType === 'emergency') {
       return (
         <View>
-          <Text style={[getTextStyle(), styles.emergencyText]}>
-            {icon} {content}
-          </Text>
+          <View style={styles.messageWithIcon}>
+            {iconName && <Icon name={iconName} size={18} color="#d32f2f" style={styles.messageIcon} />}
+            <Text style={[getTextStyle(), styles.emergencyText, styles.messageTextWithIcon]}>
+              {content}
+            </Text>
+          </View>
           {message.metadata?.emergencyLevel && (
             <Text style={styles.emergencyLevel}>
               Urgency: {message.metadata.emergencyLevel.toUpperCase()}
@@ -156,18 +153,24 @@ export const MessageBubble: React.FC<MessageBubbleProps> = React.memo(({
     // Format medication reminders
     if (message.messageType === 'medication_reminder') {
       return (
-        <Text style={[getTextStyle(), styles.medicationText]}>
-          {icon} {content}
-        </Text>
+        <View style={styles.messageWithIcon}>
+          {iconName && <Icon name={iconName} size={18} color="#2e7d32" style={styles.messageIcon} />}
+          <Text style={[getTextStyle(), styles.medicationText, styles.messageTextWithIcon]}>
+            {content}
+          </Text>
+        </View>
       );
     }
     
     // Format health insights
     if (message.messageType === 'health_insight') {
       return (
-        <Text style={[getTextStyle(), styles.healthInsightText]}>
-          {icon} {content}
-        </Text>
+        <View style={styles.messageWithIcon}>
+          {iconName && <Icon name={iconName} size={18} color={colors.mint.dark} style={styles.messageIcon} />}
+          <Text style={[getTextStyle(), styles.healthInsightText, styles.messageTextWithIcon]}>
+            {content}
+          </Text>
+        </View>
       );
     }
     
@@ -186,9 +189,12 @@ export const MessageBubble: React.FC<MessageBubbleProps> = React.memo(({
     
     return (
       <View style={styles.healthDataContainer}>
-        <Text style={styles.healthDataLabel}>
-          📋 Health data used: {message.metadata.healthDataReferenced.join(', ')}
-        </Text>
+        <View style={styles.messageWithIcon}>
+          <Icon name="clipboard-outline" size={14} color={colors.text.secondary} style={styles.messageIcon} />
+          <Text style={[styles.healthDataLabel, styles.messageTextWithIcon]}>
+            Health data used: {message.metadata.healthDataReferenced.join(', ')}
+          </Text>
+        </View>
       </View>
     );
   };
@@ -213,9 +219,12 @@ export const MessageBubble: React.FC<MessageBubbleProps> = React.memo(({
     if (message.metadata?.disclaimerShown && !hasDisclaimerInContent) {
       return (
         <View style={styles.disclaimerContainer}>
-          <Text style={styles.disclaimerText}>
-            ⚠️ This information is for general guidance only. Always consult a healthcare professional for diagnosis and treatment.
-          </Text>
+          <View style={styles.messageWithIcon}>
+            <Icon name="warning-outline" size={14} color="#f57c00" style={styles.messageIcon} />
+            <Text style={[styles.disclaimerText, styles.messageTextWithIcon]}>
+              This information is for general guidance only. Always consult a healthcare professional for diagnosis and treatment.
+            </Text>
+          </View>
         </View>
       );
     }
@@ -240,12 +249,17 @@ export const MessageBubble: React.FC<MessageBubbleProps> = React.memo(({
         
         {showTimestamp && (
           <View style={styles.timestampContainer}>
-            <Text style={styles.timestamp}>
+            <Text style={[styles.timestamp, isCurrentUser && styles.timestampUser]}>
               {formatTimestamp(message.timestamp)}
             </Text>
-            <Text style={styles.statusIcon}>
-              {getStatusIcon()}
-            </Text>
+            {getStatusIconName() && (
+              <Icon 
+                name={getStatusIconName()!} 
+                size={14} 
+                color={isCurrentUser ? '#ffffff' : colors.text.secondary}
+                style={[styles.statusIcon, isCurrentUser && styles.statusIconUser]}
+              />
+            )}
           </View>
         )}
       </View>
@@ -288,11 +302,11 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
   },
   userBubble: {
-    backgroundColor: colors.primary[600],
+    backgroundColor: colors.mint.primary,
     borderBottomRightRadius: 4,
   },
   botBubble: {
-    backgroundColor: colors.background,
+    backgroundColor: '#f5f3f7',
     borderWidth: 1,
     borderColor: colors.primary[200],
     borderBottomLeftRadius: 4,
@@ -307,12 +321,23 @@ const styles = StyleSheet.create({
     borderColor: '#4caf50',
   },
   healthInsightBubble: {
-    backgroundColor: '#e3f2fd',
-    borderColor: '#2196f3',
+    backgroundColor: colors.mint.light,
+    borderColor: colors.mint.primary,
   },
   messageText: {
     fontSize: 16,
     lineHeight: 22,
+  },
+  messageWithIcon: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+  },
+  messageIcon: {
+    marginRight: 6,
+    marginTop: 2,
+  },
+  messageTextWithIcon: {
+    flex: 1,
   },
   userText: {
     color: '#ffffff',
@@ -328,7 +353,7 @@ const styles = StyleSheet.create({
     color: '#2e7d32',
   },
   healthInsightText: {
-    color: '#1565c0',
+    color: colors.mint.dark,
   },
   emergencyLevel: {
     fontSize: 12,
@@ -366,13 +391,20 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   timestamp: {
-    fontSize: 12,
+    fontSize: 11,
     color: colors.text.secondary,
-    opacity: 0.7,
+    opacity: 0.8,
+    fontWeight: '500',
+  },
+  timestampUser: {
+    color: '#ffffff',
+    opacity: 0.85,
   },
   statusIcon: {
-    fontSize: 12,
-    color: colors.text.secondary,
     marginLeft: 4,
+    opacity: 0.8,
+  },
+  statusIconUser: {
+    opacity: 0.85,
   },
 });

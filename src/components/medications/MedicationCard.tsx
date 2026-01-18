@@ -23,7 +23,7 @@ export const MedicationCard: React.FC<MedicationCardProps> = ({
     <View style={styles.medicationCard}>
       <View style={styles.medicationHeader}>
         <View style={styles.medicationInfo}>
-          <Icon name={getTypeIcon(medication.type)} size={24} color={colors.primary[600]} />
+          <Icon name={getTypeIcon(medication.type)} size={24} color={colors.mint.primary} />
           <View style={styles.medicationDetails}>
             <Text style={styles.medicationName}>{medication.name}</Text>
             <Text style={styles.medicationType}>{getTypeLabel(medication.type)}</Text>
@@ -34,7 +34,7 @@ export const MedicationCard: React.FC<MedicationCardProps> = ({
             style={styles.editButton}
             onPress={() => onEdit(medication)}
           >
-            <Icon name="pencil" size={20} color={colors.primary[600]} />
+            <Icon name="pencil" size={20} color={colors.mint.primary} />
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.deleteButton}
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
   editButton: {
     padding: 8,
     borderRadius: 8,
-    backgroundColor: colors.primary[50],
+    backgroundColor: colors.mint.light,
   },
   deleteButton: {
     padding: 8,

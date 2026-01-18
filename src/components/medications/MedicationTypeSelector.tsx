@@ -34,7 +34,7 @@ export const MedicationTypeSelector: React.FC<MedicationTypeSelectorProps> = ({
           <Icon
             name={type.icon}
             size={20}
-            color={selectedType === type.value ? colors.surface : colors.primary[600]}
+            color={selectedType === type.value ? colors.surface : colors.mint.primary}
           />
           <Text
             style={[
@@ -63,8 +63,8 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     borderRadius: 12,
     borderWidth: 2,
-    borderColor: colors.primary[200],
-    backgroundColor: colors.primary[50],
+    borderColor: colors.mint.soft,
+    backgroundColor: colors.mint.light,
     minWidth: 100,
   },
   typeButtonSelected: {
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   typeButtonText: {
     fontSize: 14,
     fontWeight: '600',
-    color: colors.primary[600],
+    color: colors.mint.primary,
     marginLeft: 6,
   },
   typeButtonTextSelected: {

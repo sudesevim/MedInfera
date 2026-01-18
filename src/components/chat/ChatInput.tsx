@@ -217,7 +217,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.primary[600],
   },
   sendButtonInactive: {
-    backgroundColor: colors.primary[200],
+    backgroundColor: colors.primary[600],
   },
   sendButtonText: {
     fontSize: 16,
@@ -227,7 +227,7 @@ const styles = StyleSheet.create({
     color: '#ffffff',
   },
   sendButtonTextInactive: {
-    color: colors.text.secondary,
+    color: '#ffffff',
   },
   disabledOverlay: {
     position: 'absolute',

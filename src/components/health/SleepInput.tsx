@@ -42,7 +42,7 @@ export const SleepInput: React.FC<SleepInputProps> = ({
           onToggle={onToggle}
           title="Sleep Hours"
           iconName="moon-outline"
-          iconColor="#3b82f6"
+          iconColor={colors.mint.primary}
           entriesCount={entries.length}
         />
 
@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 4,
   },
   addButtonLarge: {
-    backgroundColor: '#3b82f6',
+    backgroundColor: colors.mint.primary,
     borderRadius: 8,
     paddingHorizontal: 24,
     paddingVertical: 12,

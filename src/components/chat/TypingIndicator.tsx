@@ -177,10 +177,21 @@ const styles = StyleSheet.create({
   },
   avatarContainer: {
     marginRight: 12,
+    width: 34,
+    height: 34,
+    borderRadius: 17,
+    backgroundColor: colors.primary[100],
+    justifyContent: 'center',
+    alignItems: 'center',
+    shadowColor: colors.primary[600],
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 6,
+    elevation: 4,
   },
   avatar: {
-    width: 30,
-    height: 30,
+    width: 24,
+    height: 24,
   },
   contentContainer: {
     flex: 1,

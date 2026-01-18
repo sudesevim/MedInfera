@@ -10,6 +10,7 @@ import {
   Dimensions,
   Image,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 import { colors } from '../../theme';
 
 interface WelcomeAnimationProps {
@@ -92,9 +93,18 @@ export const WelcomeAnimation: React.FC<WelcomeAnimationProps> = ({
         <Text style={styles.subtitle}>Your Health Assistant is Ready</Text>
         
         <View style={styles.features}>
-          <Text style={styles.feature}>🩺 Health Consultation</Text>
-          <Text style={styles.feature}>💊 Medication Management</Text>
-          <Text style={styles.feature}>🚨 Emergency Support</Text>
+          <View style={styles.featureRow}>
+            <Icon name="medkit-outline" size={20} color="#ffffff" style={styles.featureIcon} />
+            <Text style={styles.feature}>Health Consultation</Text>
+          </View>
+          <View style={styles.featureRow}>
+            <Icon name="medical-outline" size={20} color="#ffffff" style={styles.featureIcon} />
+            <Text style={styles.feature}>Medication Management</Text>
+          </View>
+          <View style={styles.featureRow}>
+            <Icon name="alert-circle-outline" size={20} color="#ffffff" style={styles.featureIcon} />
+            <Text style={styles.feature}>Emergency Support</Text>
+          </View>
         </View>
       </Animated.View>
     </View>
@@ -110,7 +120,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: 'rgba(168, 85, 247, 0.95)',
+    backgroundColor: '#e5daf2',
     justifyContent: 'center',
     alignItems: 'center',
     zIndex: 1000,
@@ -122,28 +132,38 @@ const styles = StyleSheet.create({
   logo: {
     width: 150,
     height: 150,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   title: {
     fontSize: 32,
     fontWeight: 'bold',
-    color: '#ffffff',
+    color: colors.primary[700],
     marginBottom: 8,
     textAlign: 'center',
   },
   subtitle: {
     fontSize: 18,
-    color: colors.primary[100],
+    color: colors.primary[600],
     marginBottom: 32,
     textAlign: 'center',
   },
   features: {
+    alignItems: 'flex-start',
+    width: '100%',
+    maxWidth: 300,
+  },
+  featureRow: {
+    flexDirection: 'row',
     alignItems: 'center',
+    marginBottom: 12,
+  },
+  featureIcon: {
+    marginRight: 12,
+    color: colors.primary[600],
   },
   feature: {
     fontSize: 16,
-    color: '#ffffff',
-    marginBottom: 8,
-    textAlign: 'center',
+    color: colors.primary[700],
+    textAlign: 'left',
   },
 });

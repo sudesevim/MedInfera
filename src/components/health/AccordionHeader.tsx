@@ -9,7 +9,7 @@ export const AccordionHeader: React.FC<AccordionProps & { iconName?: string; ico
   title,
   emoji,
   iconName,
-  iconColor = '#3b82f6',
+  iconColor = colors.mint.primary,
   entriesCount: _entriesCount,
 }) => {
   return (

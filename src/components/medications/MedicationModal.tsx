@@ -191,7 +191,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 16,
     borderRadius: 12,
-    backgroundColor: colors.primary[600],
+    backgroundColor: colors.mint.primary,
     alignItems: 'center',
   },
   saveModalButtonText: {

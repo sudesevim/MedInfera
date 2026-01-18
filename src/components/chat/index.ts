@@ -1,5 +1,10 @@
-// Chat Components Export
+/**
+ * Chat Components
+ * 
+ * UI components for the chat interface
+ */
+
+export { ChatInput } from './ChatInput';
 export { MessageBubble } from './MessageBubble';
 export { TypingIndicator } from './TypingIndicator';
-export { ChatInput } from './ChatInput';
 export { WelcomeAnimation } from './WelcomeAnimation';

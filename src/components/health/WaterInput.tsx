@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
   },
   waterAmount: {
     fontSize: 11,
-    color: '#3b82f6',
+    color: colors.mint.primary,
     fontWeight: '700',
     marginTop: 2,
   },
@@ -203,7 +203,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 4,
   },
   addButtonLarge: {
-    backgroundColor: '#3b82f6',
+    backgroundColor: colors.mint.primary,
     borderRadius: 8,
     paddingHorizontal: 24,
     paddingVertical: 12,

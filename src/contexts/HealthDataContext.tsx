@@ -26,7 +26,11 @@ interface HealthDataContextType {
   addHealthEntry: (type: keyof HealthHistoryData, value: string) => void;
   deleteHealthEntry: (type: keyof HealthHistoryData, entryIndex: number) => Promise<void>;
   getLatestEntry: (type: keyof HealthHistoryData) => HealthEntry | null;
+  getTodayEntry: (type: keyof HealthHistoryData) => HealthEntry | null;
+  getDisplayEntry: (type: keyof HealthHistoryData) => HealthEntry | null;
   getAllLatestEntries: () => { [key: string]: HealthEntry };
+  getAllTodayEntries: () => { [key: string]: HealthEntry };
+  getAllDisplayEntries: () => { [key: string]: HealthEntry };
 }
 
 const HealthDataContext = createContext<HealthDataContextType | undefined>(undefined);
@@ -139,6 +143,26 @@ export const HealthDataProvider: React.FC<{ children: ReactNode }> = ({ children
     return `${day}/${month}/${year}, ${hours}:${minutes}`;
   };
 
+  const isToday = (dateString: string): boolean => {
+    try {
+      // Parse date string in format "DD/MM/YYYY, HH:MM"
+      const [datePart] = dateString.split(', ');
+      const [day, month, year] = datePart.split('/');
+      
+      const now = new Date();
+      const entryDate = new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
+      
+      return (
+        entryDate.getDate() === now.getDate() &&
+        entryDate.getMonth() === now.getMonth() &&
+        entryDate.getFullYear() === now.getFullYear()
+      );
+    } catch (error) {
+      console.error('Error parsing date:', error);
+      return false;
+    }
+  };
+
   const addHealthEntry = async (type: keyof HealthHistoryData, value: string) => {
     if (!currentUserId) {
       console.warn('User not authenticated, cannot save health data');
@@ -175,6 +199,46 @@ export const HealthDataProvider: React.FC<{ children: ReactNode }> = ({ children
     return entries.length > 0 ? entries[0] : null;
   };
 
+  const getTodayEntry = (type: keyof HealthHistoryData): HealthEntry | null => {
+    const entries = healthData[type];
+    // Bugünün en son girişini bul
+    const todayEntry = entries.find(entry => isToday(entry.date));
+    return todayEntry || null;
+  };
+
+  // Günlük sıfırlanması gereken tipler (adım, su, uyku, kalori, egzersiz vb.)
+  const dailyResetTypes: Array<keyof HealthHistoryData> = [
+    'steps',
+    'waterIntake',
+    'sleepHours',
+    'calories',
+    'exercise',
+    'mood',
+  ];
+
+  // Statik tipler (kilo, tansiyon, nabız, kan şekeri, vücut sıcaklığı vb.)
+  const staticTypes: Array<keyof HealthHistoryData> = [
+    'weight',
+    'bloodPressure',
+    'pulse',
+    'bloodSugar',
+    'temperature',
+    'period',
+    'medications',
+    'symptoms',
+  ];
+
+  // Gösterim için uygun entry'yi getir (günlük veya statik)
+  const getDisplayEntry = (type: keyof HealthHistoryData): HealthEntry | null => {
+    if (dailyResetTypes.includes(type)) {
+      // Günlük veriler için bugünün verisini göster
+      return getTodayEntry(type);
+    } else {
+      // Statik veriler için en son veriyi göster
+      return getLatestEntry(type);
+    }
+  };
+
   const getAllLatestEntries = () => {
     const latest: { [key: string]: HealthEntry } = {};
     
@@ -186,6 +250,32 @@ export const HealthDataProvider: React.FC<{ children: ReactNode }> = ({ children
     });
 
     return latest;
+  };
+
+  const getAllTodayEntries = () => {
+    const today: { [key: string]: HealthEntry } = {};
+    
+    (Object.keys(healthData) as Array<keyof HealthHistoryData>).forEach((key) => {
+      const entry = getTodayEntry(key);
+      if (entry) {
+        today[key] = entry;
+      }
+    });
+
+    return today;
+  };
+
+  const getAllDisplayEntries = () => {
+    const display: { [key: string]: HealthEntry } = {};
+    
+    (Object.keys(healthData) as Array<keyof HealthHistoryData>).forEach((key) => {
+      const entry = getDisplayEntry(key);
+      if (entry) {
+        display[key] = entry;
+      }
+    });
+
+    return display;
   };
 
   const deleteHealthEntry = async (type: keyof HealthHistoryData, entryIndex: number) => {
@@ -231,7 +321,11 @@ export const HealthDataProvider: React.FC<{ children: ReactNode }> = ({ children
         addHealthEntry,
         deleteHealthEntry,
         getLatestEntry,
+        getTodayEntry,
+        getDisplayEntry,
         getAllLatestEntries,
+        getAllTodayEntries,
+        getAllDisplayEntries,
       }}
     >
       {children}

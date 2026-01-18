@@ -202,7 +202,7 @@ How can I help you today?`;
       } catch (sendError: any) {
         const chatbotError = errorHandlerService.handleError(sendError, 'send_message');
         
-        if (errorHandlerService.shouldRetry(operationId, chatbotError.code)) {
+        if (errorHandlerService.shouldRetry(operationId, chatbotError.code as any)) {
           errorHandlerService.recordRetryAttempt(operationId);
           const delay = errorHandlerService.getRetryDelay(operationId);
           
@@ -247,7 +247,7 @@ How can I help you today?`;
     } catch (error: any) {
       console.error('Failed to send message:', error);
       const chatbotError = errorHandlerService.handleError(error, 'send_message_general');
-      const fallback = errorHandlerService.getFallbackResponse(chatbotError.code);
+      const fallback = errorHandlerService.getFallbackResponse(chatbotError.code as any);
       
       setState(prev => ({
         ...prev,
@@ -259,7 +259,7 @@ How can I help you today?`;
 
   const handleSendMessageError = async (error: any, originalMessage: string) => {
     const chatbotError = errorHandlerService.handleError(error, 'send_message');
-    const fallback = errorHandlerService.getFallbackResponse(chatbotError.code);
+    const fallback = errorHandlerService.getFallbackResponse(chatbotError.code as any);
     
     // Send fallback response as bot message
     try {

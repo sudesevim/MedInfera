@@ -1,0 +1,5 @@
+# Prettier'ı tüm dosyalar için devre dışı bırak
+*
+**/*
+
+

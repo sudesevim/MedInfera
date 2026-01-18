@@ -1,0 +1,1545 @@
+  $ /opt/homebrew/bin/node -p require.resolve(     "react-native/scripts/react_native_pods.rb",     {paths: [process.argv[1]]},   ) /Users/sudesevim/Projects/MedInfera/ios
+  /Users/sudesevim/Projects/MedInfera/node_modules/react-native/scripts/react_native_pods.rb
+Found 13 modules for target `MedInfera`
+link_native_modules! {ios_packages: [{configurations: [], name: "@react-native-async-storage/async-storage", root: "/Users/sudesevim/Projects/MedInfera/node_modules/@react-native-async-storage/async-storage", path: "../node_modules/@react-native-async-storage/async-storage", podspec_path: "/Users/sudesevim/Projects/MedInfera/node_modules/@react-native-async-storage/async-storage/RNCAsyncStorage.podspec", script_phases: []}, {configurations: [], name: "@react-native-firebase/app", root: "/Users/sudesevim/Projects/MedInfera/node_modules/@react-native-firebase/app", path: "../node_modules/@react-native-firebase/app", podspec_path: "/Users/sudesevim/Projects/MedInfera/node_modules/@react-native-firebase/app/RNFBApp.podspec", script_phases: [{"name" => "[RNFB] Core Configuration", "path" => "./ios_config.sh", "execution_position" => "after_compile", "input_files" => ["$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)"]}]}, {configurations: [], name: "@react-native-firebase/auth", root: "/Users/sudesevim/Projects/MedInfera/node_modules/@react-native-firebase/auth", path: "../node_modules/@react-native-firebase/auth", podspec_path: "/Users/sudesevim/Projects/MedInfera/node_modules/@react-native-firebase/auth/RNFBAuth.podspec", script_phases: []}, {configurations: [], name: "@react-native-firebase/firestore", root: "/Users/sudesevim/Projects/MedInfera/node_modules/@react-native-firebase/firestore", path: "../node_modules/@react-native-firebase/firestore", podspec_path: "/Users/sudesevim/Projects/MedInfera/node_modules/@react-native-firebase/firestore/RNFBFirestore.podspec", script_phases: []}, {configurations: [], name: "@react-native-firebase/storage", root: "/Users/sudesevim/Projects/MedInfera/node_modules/@react-native-firebase/storage", path: "../node_modules/@react-native-firebase/storage", podspec_path: "/Users/sudesevim/Projects/MedInfera/node_modules/@react-native-firebase/storage/RNFBStorage.podspec", script_phases: []}, {configurations: [], name: "@react-native-google-signin/google-signin", root: "/Users/sudesevim/Projects/MedInfera/node_modules/@react-native-google-signin/google-signin", path: "../node_modules/@react-native-google-signin/google-signin", podspec_path: "/Users/sudesevim/Projects/MedInfera/node_modules/@react-native-google-signin/google-signin/RNGoogleSignin.podspec", script_phases: []}, {configurations: [], name: "react-native-image-picker", root: "/Users/sudesevim/Projects/MedInfera/node_modules/react-native-image-picker", path: "../node_modules/react-native-image-picker", podspec_path: "/Users/sudesevim/Projects/MedInfera/node_modules/react-native-image-picker/react-native-image-picker.podspec", script_phases: []}, {configurations: [], name: "react-native-print", root: "/Users/sudesevim/Projects/MedInfera/node_modules/react-native-print", path: "../node_modules/react-native-print", podspec_path: "/Users/sudesevim/Projects/MedInfera/node_modules/react-native-print/react-native-print.podspec", script_phases: []}, {configurations: [], name: "react-native-safe-area-context", root: "/Users/sudesevim/Projects/MedInfera/node_modules/react-native-safe-area-context", path: "../node_modules/react-native-safe-area-context", podspec_path: "/Users/sudesevim/Projects/MedInfera/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec", script_phases: []}, {configurations: [], name: "react-native-screens", root: "/Users/sudesevim/Projects/MedInfera/node_modules/react-native-screens", path: "../node_modules/react-native-screens", podspec_path: "/Users/sudesevim/Projects/MedInfera/node_modules/react-native-screens/RNScreens.podspec", script_phases: []}, {configurations: [], name: "react-native-svg", root: "/Users/sudesevim/Projects/MedInfera/node_modules/react-native-svg", path: "../node_modules/react-native-svg", podspec_path: "/Users/sudesevim/Projects/MedInfera/node_modules/react-native-svg/RNSVG.podspec", script_phases: []}, {configurations: [], name: "react-native-vector-icons", root: "/Users/sudesevim/Projects/MedInfera/node_modules/react-native-vector-icons", path: "../node_modules/react-native-vector-icons", podspec_path: "/Users/sudesevim/Projects/MedInfera/node_modules/react-native-vector-icons/RNVectorIcons.podspec", script_phases: []}, {configurations: [], name: "react-native-webview", root: "/Users/sudesevim/Projects/MedInfera/node_modules/react-native-webview", path: "../node_modules/react-native-webview", podspec_path: "/Users/sudesevim/Projects/MedInfera/node_modules/react-native-webview/react-native-webview.podspec", script_phases: []}], ios_project_root_path: "/Users/sudesevim/Projects/MedInfera/ios", react_native_path: "../node_modules/react-native"}
+Adding a custom script phase for Pod RNFBApp: [RNFB] Core Configuration
+Auto-linking React Native modules for target `MedInfera`: RNCAsyncStorage, RNFBApp, RNFBAuth, RNFBFirestore, RNFBStorage, RNGoogleSignin, RNSVG, RNScreens, RNVectorIcons, react-native-image-picker, react-native-print, react-native-safe-area-context, and react-native-webview
+Framework build type is static framework
+[ReactNativeDependencies] Setting up ReactNativeDependencies...
+[ReactNativeDependencies] Building from source: true
+[ReactNativeDependencies] Source: 
+[ReactNativeCore] Setting up ReactNativeCore...
+[ReactNativeCore] Building from source: true
+[ReactNativeCore] Source: 
+Configuring the target with the New Architecture
+  $ /opt/homebrew/bin/node ./../node_modules/react-native/scripts/generate-codegen-artifacts.js -p /Users/sudesevim/Projects/MedInfera/ios/.. -o /Users/sudesevim/Projects/MedInfera/ios -t ios
+  [36m[1m[Codegen][0m Analyzing /Users/sudesevim/Projects/MedInfera/package.json[0m
+  [36m[1m[Codegen][0m [33mSearching for codegen-enabled libraries in the app.[0m
+  [36m[1m[Codegen][0m [33mThe "codegenConfig" field is not defined in package.json. Assuming there is nothing to generate at the app level.[0m
+  [36m[1m[Codegen][0m [33mSearching for codegen-enabled libraries in react-native.config.js[0m
+  [36m[1m[Codegen][0m Found @react-native-async-storage/async-storage[0m
+  [36m[1m[Codegen][0m Found react-native-image-picker[0m
+  [36m[1m[Codegen][0m Found react-native-safe-area-context[0m
+  [36m[1m[Codegen][0m Found react-native-screens[0m
+  [36m[1m[Codegen][0m Found react-native-svg[0m
+  [36m[1m[Codegen][0m Found react-native-vector-icons[0m
+  [36m[1m[Codegen][0m Found react-native-webview[0m
+  [36m[1m[Codegen][0m Processing rnasyncstorage[0m
+  [36m[1m[Codegen][0m [33mSearching for podspec in the project dependencies.[0m
+  [36m[1m[Codegen][0m Supported Apple platforms: ios, macos, tvos, visionos for rnasyncstorage[0m
+  [36m[1m[Codegen][0m Processing RNImagePickerSpec[0m
+  [36m[1m[Codegen][0m [33mSearching for podspec in the project dependencies.[0m
+  [36m[1m[Codegen][0m Supported Apple platforms: ios for RNImagePickerSpec[0m
+  [36m[1m[Codegen][0m Processing safeareacontext[0m
+  [36m[1m[Codegen][0m [33mSearching for podspec in the project dependencies.[0m
+  [36m[1m[Codegen][0m Supported Apple platforms: ios, macos, tvos, visionos for safeareacontext[0m
+  [36m[1m[Codegen][0m Processing rnscreens[0m
+  [36m[1m[Codegen][0m [33mSearching for podspec in the project dependencies.[0m
+  [36m[1m[Codegen][0m Supported Apple platforms: ios, tvos, visionos for rnscreens[0m
+  [36m[1m[Codegen][0m Processing rnsvg[0m
+  [36m[1m[Codegen][0m [33mSearching for podspec in the project dependencies.[0m
+  [36m[1m[Codegen][0m Supported Apple platforms: ios, macos, tvos, visionos for rnsvg[0m
+  [36m[1m[Codegen][0m Processing RNVectorIconsSpec[0m
+  [36m[1m[Codegen][0m [33mSearching for podspec in the project dependencies.[0m
+  [36m[1m[Codegen][0m Supported Apple platforms: ios, tvos, visionos for RNVectorIconsSpec[0m
+  [36m[1m[Codegen][0m Processing RNCWebViewSpec[0m
+  [36m[1m[Codegen][0m [33mSearching for podspec in the project dependencies.[0m
+  [36m[1m[Codegen][0m Supported Apple platforms: ios, macos, visionos for RNCWebViewSpec[0m
+  [36m[1m[Codegen][0m Generating Native Code for rnasyncstorage - ios[0m
+  [36m[1m[Codegen][0m Generated artifacts: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios[0m
+  [36m[1m[Codegen][0m Generating Native Code for RNImagePickerSpec - ios[0m
+  [36m[1m[Codegen][0m Generated artifacts: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios[0m
+  [36m[1m[Codegen][0m Generating Native Code for safeareacontext - ios[0m
+  [36m[1m[Codegen][0m Generated artifacts: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios[0m
+  [36m[1m[Codegen][0m Generating Native Code for rnscreens - ios[0m
+  [36m[1m[Codegen][0m Generated artifacts: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios[0m
+  [36m[1m[Codegen][0m Generating Native Code for rnsvg - ios[0m
+  [36m[1m[Codegen][0m Generated artifacts: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios[0m
+  [36m[1m[Codegen][0m Generating Native Code for RNVectorIconsSpec - ios[0m
+  [36m[1m[Codegen][0m Generated artifacts: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios[0m
+  [36m[1m[Codegen][0m Generating Native Code for RNCWebViewSpec - ios[0m
+  [36m[1m[Codegen][0m Generated artifacts: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios[0m
+  [36m[1m[Codegen][0m Generating RCTThirdPartyComponentsProvider.h[0m
+  [36m[1m[Codegen][0m Generated artifact: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios/RCTThirdPartyComponentsProvider.h[0m
+  [36m[1m[Codegen][0m Generating RCTThirdPartyComponentsProvider.mm[0m
+  [36m[1m[Codegen][0m Generated artifact: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios/RCTThirdPartyComponentsProvider.mm[0m
+  [36m[1m[Codegen][0m Generating RCTModulesProvider.h[0m
+  [36m[1m[Codegen][0m Generated artifact: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios/RCTModuleProviders.h[0m
+  [36m[1m[Codegen][0m Generating RCTModuleProviders.mm[0m
+  [36m[1m[Codegen][0m Generated artifact: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios/RCTModuleProviders.mm[0m
+  [36m[1m[Codegen][0m Generating RCTAppDependencyProvider[0m
+  [36m[1m[Codegen][0m Generated artifact: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios/RCTAppDependencyProvider.h[0m
+  [36m[1m[Codegen][0m Generated artifact: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios/RCTAppDependencyProvider.mm[0m
+  [36m[1m[Codegen][0m Generated podspec: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios/ReactAppDependencyProvider.podspec[0m
+  [36m[1m[Codegen][0m Generated podspec: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios/ReactCodegen.podspec[0m
+  [36m[1m[Codegen][0m [33mDone.[0m
+[36m[1m[Codegen][0m Analyzing /Users/sudesevim/Projects/MedInfera/package.json[0m
+[36m[1m[Codegen][0m [33mSearching for codegen-enabled libraries in the app.[0m
+[36m[1m[Codegen][0m [33mThe "codegenConfig" field is not defined in package.json. Assuming there is nothing to generate at the app level.[0m
+[36m[1m[Codegen][0m [33mSearching for codegen-enabled libraries in react-native.config.js[0m
+[36m[1m[Codegen][0m Found @react-native-async-storage/async-storage[0m
+[36m[1m[Codegen][0m Found react-native-image-picker[0m
+[36m[1m[Codegen][0m Found react-native-safe-area-context[0m
+[36m[1m[Codegen][0m Found react-native-screens[0m
+[36m[1m[Codegen][0m Found react-native-svg[0m
+[36m[1m[Codegen][0m Found react-native-vector-icons[0m
+[36m[1m[Codegen][0m Found react-native-webview[0m
+[36m[1m[Codegen][0m Processing rnasyncstorage[0m
+[36m[1m[Codegen][0m [33mSearching for podspec in the project dependencies.[0m
+[36m[1m[Codegen][0m Supported Apple platforms: ios, macos, tvos, visionos for rnasyncstorage[0m
+[36m[1m[Codegen][0m Processing RNImagePickerSpec[0m
+[36m[1m[Codegen][0m [33mSearching for podspec in the project dependencies.[0m
+[36m[1m[Codegen][0m Supported Apple platforms: ios for RNImagePickerSpec[0m
+[36m[1m[Codegen][0m Processing safeareacontext[0m
+[36m[1m[Codegen][0m [33mSearching for podspec in the project dependencies.[0m
+[36m[1m[Codegen][0m Supported Apple platforms: ios, macos, tvos, visionos for safeareacontext[0m
+[36m[1m[Codegen][0m Processing rnscreens[0m
+[36m[1m[Codegen][0m [33mSearching for podspec in the project dependencies.[0m
+[36m[1m[Codegen][0m Supported Apple platforms: ios, tvos, visionos for rnscreens[0m
+[36m[1m[Codegen][0m Processing rnsvg[0m
+[36m[1m[Codegen][0m [33mSearching for podspec in the project dependencies.[0m
+[36m[1m[Codegen][0m Supported Apple platforms: ios, macos, tvos, visionos for rnsvg[0m
+[36m[1m[Codegen][0m Processing RNVectorIconsSpec[0m
+[36m[1m[Codegen][0m [33mSearching for podspec in the project dependencies.[0m
+[36m[1m[Codegen][0m Supported Apple platforms: ios, tvos, visionos for RNVectorIconsSpec[0m
+[36m[1m[Codegen][0m Processing RNCWebViewSpec[0m
+[36m[1m[Codegen][0m [33mSearching for podspec in the project dependencies.[0m
+[36m[1m[Codegen][0m Supported Apple platforms: ios, macos, visionos for RNCWebViewSpec[0m
+[36m[1m[Codegen][0m Generating Native Code for rnasyncstorage - ios[0m
+[36m[1m[Codegen][0m Generated artifacts: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios[0m
+[36m[1m[Codegen][0m Generating Native Code for RNImagePickerSpec - ios[0m
+[36m[1m[Codegen][0m Generated artifacts: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios[0m
+[36m[1m[Codegen][0m Generating Native Code for safeareacontext - ios[0m
+[36m[1m[Codegen][0m Generated artifacts: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios[0m
+[36m[1m[Codegen][0m Generating Native Code for rnscreens - ios[0m
+[36m[1m[Codegen][0m Generated artifacts: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios[0m
+[36m[1m[Codegen][0m Generating Native Code for rnsvg - ios[0m
+[36m[1m[Codegen][0m Generated artifacts: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios[0m
+[36m[1m[Codegen][0m Generating Native Code for RNVectorIconsSpec - ios[0m
+[36m[1m[Codegen][0m Generated artifacts: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios[0m
+[36m[1m[Codegen][0m Generating Native Code for RNCWebViewSpec - ios[0m
+[36m[1m[Codegen][0m Generated artifacts: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios[0m
+[36m[1m[Codegen][0m Generating RCTThirdPartyComponentsProvider.h[0m
+[36m[1m[Codegen][0m Generated artifact: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios/RCTThirdPartyComponentsProvider.h[0m
+[36m[1m[Codegen][0m Generating RCTThirdPartyComponentsProvider.mm[0m
+[36m[1m[Codegen][0m Generated artifact: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios/RCTThirdPartyComponentsProvider.mm[0m
+[36m[1m[Codegen][0m Generating RCTModulesProvider.h[0m
+[36m[1m[Codegen][0m Generated artifact: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios/RCTModuleProviders.h[0m
+[36m[1m[Codegen][0m Generating RCTModuleProviders.mm[0m
+[36m[1m[Codegen][0m Generated artifact: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios/RCTModuleProviders.mm[0m
+[36m[1m[Codegen][0m Generating RCTAppDependencyProvider[0m
+[36m[1m[Codegen][0m Generated artifact: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios/RCTAppDependencyProvider.h[0m
+[36m[1m[Codegen][0m Generated artifact: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios/RCTAppDependencyProvider.mm[0m
+[36m[1m[Codegen][0m Generated podspec: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios/ReactAppDependencyProvider.podspec[0m
+[36m[1m[Codegen][0m Generated podspec: /Users/sudesevim/Projects/MedInfera/ios/build/generated/ios/ReactCodegen.podspec[0m
+[36m[1m[Codegen][0m [33mDone.[0m
+  Preparing
+
+Analyzing dependencies
+
+Inspecting targets to integrate
+  Using `ARCHS` setting to build architectures of target `Pods-MedInfera`: (``)
+
+Finding Podfile changes
+  - DoubleConversion
+  - FBLazyVector
+  - RCT-Folly
+  - RCTDeprecation
+  - RCTRequired
+  - RCTTypeSafety
+  - RNCAsyncStorage
+  - RNFBApp
+  - RNFBAuth
+  - RNFBFirestore
+  - RNFBStorage
+  - RNGoogleSignin
+  - RNSVG
+  - RNScreens
+  - RNVectorIcons
+  - React
+  - React-Core
+  - React-CoreModules
+  - React-Fabric
+  - React-FabricComponents
+  - React-FabricImage
+  - React-ImageManager
+  - React-Mapbuffer
+  - React-NativeModulesApple
+  - React-RCTActionSheet
+  - React-RCTAnimation
+  - React-RCTAppDelegate
+  - React-RCTBlob
+  - React-RCTFBReactNativeSpec
+  - React-RCTFabric
+  - React-RCTImage
+  - React-RCTLinking
+  - React-RCTNetwork
+  - React-RCTRuntime
+  - React-RCTSettings
+  - React-RCTText
+  - React-RCTVibration
+  - React-RuntimeApple
+  - React-RuntimeCore
+  - React-RuntimeHermes
+  - React-callinvoker
+  - React-cxxreact
+  - React-debug
+  - React-defaultsnativemodule
+  - React-domnativemodule
+  - React-featureflags
+  - React-featureflagsnativemodule
+  - React-graphics
+  - React-hermes
+  - React-idlecallbacksnativemodule
+  - React-jserrorhandler
+  - React-jsi
+  - React-jsiexecutor
+  - React-jsinspector
+  - React-jsinspectorcdp
+  - React-jsinspectornetwork
+  - React-jsinspectortracing
+  - React-jsitooling
+  - React-jsitracing
+  - React-logger
+  - React-microtasksnativemodule
+  - React-oscompat
+  - React-perflogger
+  - React-performancecdpmetrics
+  - React-performancetimeline
+  - React-rendererconsistency
+  - React-renderercss
+  - React-rendererdebug
+  - React-runtimeexecutor
+  - React-runtimescheduler
+  - React-timing
+  - React-utils
+  - React-webperformancenativemodule
+  - ReactAppDependencyProvider
+  - ReactCodegen
+  - ReactCommon
+  - SocketRocket
+  - Yoga
+  - boost
+  - fast_float
+  - fmt
+  - glog
+  - hermes-engine
+  - react-native-image-picker
+  - react-native-print
+  - react-native-safe-area-context
+  - react-native-webview
+
+Fetching external sources
+-> Fetching podspec for `FBLazyVector` from `../node_modules/react-native/Libraries/FBLazyVector`
+-> Fetching podspec for `RCTDeprecation` from `../node_modules/react-native/ReactApple/Libraries/RCTFoundation/RCTDeprecation`
+-> Fetching podspec for `RCTRequired` from `../node_modules/react-native/Libraries/Required`
+-> Fetching podspec for `RCTTypeSafety` from `../node_modules/react-native/Libraries/TypeSafety`
+-> Fetching podspec for `RNCAsyncStorage` from `../node_modules/@react-native-async-storage/async-storage`
+-> Fetching podspec for `RNFBApp` from `../node_modules/@react-native-firebase/app`
+-> Fetching podspec for `RNFBAuth` from `../node_modules/@react-native-firebase/auth`
+-> Fetching podspec for `RNFBFirestore` from `../node_modules/@react-native-firebase/firestore`
+-> Fetching podspec for `RNFBStorage` from `../node_modules/@react-native-firebase/storage`
+-> Fetching podspec for `RNGoogleSignin` from `../node_modules/@react-native-google-signin/google-signin`
+-> Fetching podspec for `RNSVG` from `../node_modules/react-native-svg`
+-> Fetching podspec for `RNScreens` from `../node_modules/react-native-screens`
+-> Fetching podspec for `RNVectorIcons` from `../node_modules/react-native-vector-icons`
+-> Fetching podspec for `React` from `../node_modules/react-native/`
+-> Fetching podspec for `React-Core` from `../node_modules/react-native/`
+-> Fetching podspec for `React-CoreModules` from `../node_modules/react-native/React/CoreModules`
+-> Fetching podspec for `React-Fabric` from `../node_modules/react-native/ReactCommon`
+-> Fetching podspec for `React-FabricComponents` from `../node_modules/react-native/ReactCommon`
+-> Fetching podspec for `React-FabricImage` from `../node_modules/react-native/ReactCommon`
+-> Fetching podspec for `React-ImageManager` from `../node_modules/react-native/ReactCommon/react/renderer/imagemanager/platform/ios`
+-> Fetching podspec for `React-Mapbuffer` from `../node_modules/react-native/ReactCommon`
+-> Fetching podspec for `React-NativeModulesApple` from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`
+-> Fetching podspec for `React-RCTActionSheet` from `../node_modules/react-native/Libraries/ActionSheetIOS`
+-> Fetching podspec for `React-RCTAnimation` from `../node_modules/react-native/Libraries/NativeAnimation`
+-> Fetching podspec for `React-RCTAppDelegate` from `../node_modules/react-native/Libraries/AppDelegate`
+-> Fetching podspec for `React-RCTBlob` from `../node_modules/react-native/Libraries/Blob`
+-> Fetching podspec for `React-RCTFBReactNativeSpec` from `../node_modules/react-native/React`
+-> Fetching podspec for `React-RCTFabric` from `../node_modules/react-native/React`
+-> Fetching podspec for `React-RCTImage` from `../node_modules/react-native/Libraries/Image`
+-> Fetching podspec for `React-RCTLinking` from `../node_modules/react-native/Libraries/LinkingIOS`
+-> Fetching podspec for `React-RCTNetwork` from `../node_modules/react-native/Libraries/Network`
+-> Fetching podspec for `React-RCTRuntime` from `../node_modules/react-native/React/Runtime`
+-> Fetching podspec for `React-RCTSettings` from `../node_modules/react-native/Libraries/Settings`
+-> Fetching podspec for `React-RCTText` from `../node_modules/react-native/Libraries/Text`
+-> Fetching podspec for `React-RCTVibration` from `../node_modules/react-native/Libraries/Vibration`
+-> Fetching podspec for `React-RuntimeApple` from `../node_modules/react-native/ReactCommon/react/runtime/platform/ios`
+-> Fetching podspec for `React-RuntimeCore` from `../node_modules/react-native/ReactCommon/react/runtime`
+-> Fetching podspec for `React-RuntimeHermes` from `../node_modules/react-native/ReactCommon/react/runtime`
+-> Fetching podspec for `React-callinvoker` from `../node_modules/react-native/ReactCommon/callinvoker`
+-> Fetching podspec for `React-cxxreact` from `../node_modules/react-native/ReactCommon/cxxreact`
+-> Fetching podspec for `React-debug` from `../node_modules/react-native/ReactCommon/react/debug`
+-> Fetching podspec for `React-defaultsnativemodule` from `../node_modules/react-native/ReactCommon/react/nativemodule/defaults`
+-> Fetching podspec for `React-domnativemodule` from `../node_modules/react-native/ReactCommon/react/nativemodule/dom`
+-> Fetching podspec for `React-featureflags` from `../node_modules/react-native/ReactCommon/react/featureflags`
+-> Fetching podspec for `React-featureflagsnativemodule` from `../node_modules/react-native/ReactCommon/react/nativemodule/featureflags`
+-> Fetching podspec for `React-graphics` from `../node_modules/react-native/ReactCommon/react/renderer/graphics`
+-> Fetching podspec for `React-hermes` from `../node_modules/react-native/ReactCommon/hermes`
+-> Fetching podspec for `React-idlecallbacksnativemodule` from `../node_modules/react-native/ReactCommon/react/nativemodule/idlecallbacks`
+-> Fetching podspec for `React-jserrorhandler` from `../node_modules/react-native/ReactCommon/jserrorhandler`
+-> Fetching podspec for `React-jsi` from `../node_modules/react-native/ReactCommon/jsi`
+-> Fetching podspec for `React-jsiexecutor` from `../node_modules/react-native/ReactCommon/jsiexecutor`
+-> Fetching podspec for `React-jsinspector` from `../node_modules/react-native/ReactCommon/jsinspector-modern`
+-> Fetching podspec for `React-jsinspectorcdp` from `../node_modules/react-native/ReactCommon/jsinspector-modern/cdp`
+-> Fetching podspec for `React-jsinspectornetwork` from `../node_modules/react-native/ReactCommon/jsinspector-modern/network`
+-> Fetching podspec for `React-jsinspectortracing` from `../node_modules/react-native/ReactCommon/jsinspector-modern/tracing`
+-> Fetching podspec for `React-jsitooling` from `../node_modules/react-native/ReactCommon/jsitooling`
+-> Fetching podspec for `React-jsitracing` from `../node_modules/react-native/ReactCommon/hermes/executor/`
+-> Fetching podspec for `React-logger` from `../node_modules/react-native/ReactCommon/logger`
+-> Fetching podspec for `React-microtasksnativemodule` from `../node_modules/react-native/ReactCommon/react/nativemodule/microtasks`
+-> Fetching podspec for `React-oscompat` from `../node_modules/react-native/ReactCommon/oscompat`
+-> Fetching podspec for `React-perflogger` from `../node_modules/react-native/ReactCommon/reactperflogger`
+-> Fetching podspec for `React-performancecdpmetrics` from `../node_modules/react-native/ReactCommon/react/performance/cdpmetrics`
+-> Fetching podspec for `React-performancetimeline` from `../node_modules/react-native/ReactCommon/react/performance/timeline`
+-> Fetching podspec for `React-rendererconsistency` from `../node_modules/react-native/ReactCommon/react/renderer/consistency`
+-> Fetching podspec for `React-renderercss` from `../node_modules/react-native/ReactCommon/react/renderer/css`
+-> Fetching podspec for `React-rendererdebug` from `../node_modules/react-native/ReactCommon/react/renderer/debug`
+-> Fetching podspec for `React-runtimeexecutor` from `../node_modules/react-native/ReactCommon/runtimeexecutor`
+-> Fetching podspec for `React-runtimescheduler` from `../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`
+-> Fetching podspec for `React-timing` from `../node_modules/react-native/ReactCommon/react/timing`
+-> Fetching podspec for `React-utils` from `../node_modules/react-native/ReactCommon/react/utils`
+-> Fetching podspec for `React-webperformancenativemodule` from `../node_modules/react-native/ReactCommon/react/nativemodule/webperformance`
+-> Fetching podspec for `ReactAppDependencyProvider` from `build/generated/ios`
+-> Fetching podspec for `ReactCodegen` from `build/generated/ios`
+-> Fetching podspec for `ReactCommon` from `../node_modules/react-native/ReactCommon`
+-> Fetching podspec for `Yoga` from `../node_modules/react-native/ReactCommon/yoga`
+-> Fetching podspec for `react-native-image-picker` from `../node_modules/react-native-image-picker`
+-> Fetching podspec for `react-native-print` from `../node_modules/react-native-print`
+-> Fetching podspec for `react-native-safe-area-context` from `../node_modules/react-native-safe-area-context`
+-> Fetching podspec for `react-native-webview` from `../node_modules/react-native-webview`
+
+Resolving dependencies of `Podfile`
+  CDN: trunk Relative path: CocoaPods-version.yml exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_a_9_3.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/a/9/3/SocketRocket/0.7.1/SocketRocket.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_0_3_5.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/3/5/Firebase/12.8.0/Firebase.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/3/5/Firebase/12.4.0/Firebase.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_d_4_0.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/d/4/0/GoogleSignIn/9.1.0/GoogleSignIn.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/3/5/Firebase/12.4.0/Firebase.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/3/5/Firebase/12.4.0/Firebase.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/3/5/Firebase/12.4.0/Firebase.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/d/4/0/GoogleSignIn/7.0.0/GoogleSignIn.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_b_b_9.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/b/b/9/AppAuth/2.0.0/AppAuth.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_2_c_c.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/2/c/c/GTMAppAuth/5.0.0/GTMAppAuth.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_c_e_3.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/c/e/3/GTMSessionFetcher/5.0.0/GTMSessionFetcher.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/c/e/3/GTMSessionFetcher/3.5.0/GTMSessionFetcher.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/b/b/9/AppAuth/1.7.6/AppAuth.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/b/b/9/AppAuth/1.7.6/AppAuth.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/b/b/9/AppAuth/1.7.6/AppAuth.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/2/c/c/GTMAppAuth/2.0.0/GTMAppAuth.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/c/e/3/GTMSessionFetcher/3.5.0/GTMSessionFetcher.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/b/b/9/AppAuth/1.7.6/AppAuth.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_3_c_c.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/c/c/FirebaseStorage/12.8.0/FirebaseStorage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/c/c/FirebaseStorage/12.4.0/FirebaseStorage.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_e_9_8.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/e/9/8/FirebaseAppCheckInterop/12.8.0/FirebaseAppCheckInterop.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_4_2_7.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/4/2/7/FirebaseAuthInterop/12.8.0/FirebaseAuthInterop.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_8_b_d.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/8/b/d/FirebaseCore/12.8.0/FirebaseCore.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_4_7_f.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/4/7/f/FirebaseCoreExtension/12.8.0/FirebaseCoreExtension.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/c/e/3/GTMSessionFetcher/3.5.0/GTMSessionFetcher.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_0_8_4.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/8/4/GoogleUtilities/8.1.0/GoogleUtilities.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/8/4/GoogleUtilities/8.1.0/GoogleUtilities.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/a/9/3/SocketRocket/0.7.1/SocketRocket.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/a/9/3/SocketRocket/0.7.1/SocketRocket.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/4/7/f/FirebaseCoreExtension/12.4.0/FirebaseCoreExtension.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/4/2/7/FirebaseAuthInterop/12.4.0/FirebaseAuthInterop.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/8/b/d/FirebaseCore/12.4.0/FirebaseCore.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/8/4/GoogleUtilities/8.1.0/GoogleUtilities.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_7_9_1.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/7/9/1/FirebaseCoreInternal/12.8.0/FirebaseCoreInternal.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/7/9/1/FirebaseCoreInternal/12.4.0/FirebaseCoreInternal.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/8/4/GoogleUtilities/8.1.0/GoogleUtilities.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/8/4/GoogleUtilities/8.1.0/GoogleUtilities.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_0_9_f.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/9/f/FirebaseFirestore/12.8.0/FirebaseFirestore.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/9/f/FirebaseFirestore/12.4.0/FirebaseFirestore.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_3_1_8.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/1/8/FirebaseFirestoreInternal/12.8.0/FirebaseFirestoreInternal.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_b_c_7.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/b/c/7/FirebaseSharedSwift/12.8.0/FirebaseSharedSwift.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/8/4/GoogleUtilities/8.1.0/GoogleUtilities.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_6_3_6.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/6/3/6/FirebaseAuth/12.8.0/FirebaseAuth.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/6/3/6/FirebaseAuth/12.4.0/FirebaseAuth.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/8/4/GoogleUtilities/8.1.0/GoogleUtilities.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_c_1_1.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/c/1/1/RecaptchaInterop/101.0.0/RecaptchaInterop.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/e/9/8/FirebaseAppCheckInterop/12.4.0/FirebaseAppCheckInterop.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/1/8/FirebaseFirestoreInternal/12.4.0/FirebaseFirestoreInternal.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_3_8_6.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20250512.1/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_9_1_0.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/9/1/0/gRPC-Core/1.76.0/gRPC-Core.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_c_8_7.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/c/8/7/gRPC-C++/1.76.0/gRPC-C++.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_a_d_a.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/a/d/a/leveldb-library/1.22.6/leveldb-library.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_6_1_e.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/6/1/e/nanopb/3.30910.0/nanopb.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/9/1/0/gRPC-Core/1.69.0/gRPC-Core.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/9/1/0/gRPC-Core/1.69.0/gRPC-Core.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/9/1/0/gRPC-Core/1.69.0/gRPC-Core.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/9/1/0/gRPC-Core/1.69.0/gRPC-Core.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: all_pods_versions_f_8_8.txt exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/f/8/8/BoringSSL-GRPC/0.0.41/BoringSSL-GRPC.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/b/c/7/FirebaseSharedSwift/12.4.0/FirebaseSharedSwift.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/a/d/a/leveldb-library/1.22.6/leveldb-library.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/c/8/7/gRPC-C++/1.69.0/gRPC-C++.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/c/8/7/gRPC-C++/1.69.0/gRPC-C++.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/c/8/7/gRPC-C++/1.69.0/gRPC-C++.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/c/8/7/gRPC-C++/1.69.0/gRPC-C++.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/9/1/0/gRPC-Core/1.69.0/gRPC-Core.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/f/8/8/BoringSSL-GRPC/0.0.37/BoringSSL-GRPC.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/f/8/8/BoringSSL-GRPC/0.0.37/BoringSSL-GRPC.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/f/8/8/BoringSSL-GRPC/0.0.37/BoringSSL-GRPC.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/6/1/e/nanopb/3.30910.0/nanopb.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/6/1/e/nanopb/3.30910.0/nanopb.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/6/1/e/nanopb/3.30910.0/nanopb.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/8/4/GoogleUtilities/8.1.0/GoogleUtilities.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/8/4/GoogleUtilities/8.1.0/GoogleUtilities.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/8/4/GoogleUtilities/8.1.0/GoogleUtilities.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/0/8/4/GoogleUtilities/8.1.0/GoogleUtilities.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/c/1/1/RecaptchaInterop/101.0.0/RecaptchaInterop.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+  CDN: trunk Relative path: Specs/3/8/6/abseil/1.20240722.0/abseil.podspec.json exists! Returning local because checking is only performed in repo update
+
+Comparing resolved specification to the sandbox manifest
+  - AppAuth
+  - BoringSSL-GRPC
+  - DoubleConversion
+  - FBLazyVector
+  - Firebase
+  - FirebaseAppCheckInterop
+  - FirebaseAuth
+  - FirebaseAuthInterop
+  - FirebaseCore
+  - FirebaseCoreExtension
+  - FirebaseCoreInternal
+  - FirebaseFirestore
+  - FirebaseFirestoreInternal
+  - FirebaseSharedSwift
+  - FirebaseStorage
+  - GTMAppAuth
+  - GTMSessionFetcher
+  - GoogleSignIn
+  - GoogleUtilities
+  - RCT-Folly
+  - RCTDeprecation
+  - RCTRequired
+  - RCTTypeSafety
+  - RNCAsyncStorage
+  - RNFBApp
+  - RNFBAuth
+  - RNFBFirestore
+  - RNFBStorage
+  - RNGoogleSignin
+  - RNSVG
+  - RNScreens
+  - RNVectorIcons
+  - React
+  - React-Core
+  - React-CoreModules
+  - React-Fabric
+  - React-FabricComponents
+  - React-FabricImage
+  - React-ImageManager
+  - React-Mapbuffer
+  - React-NativeModulesApple
+  - React-RCTActionSheet
+  - React-RCTAnimation
+  - React-RCTAppDelegate
+  - React-RCTBlob
+  - React-RCTFBReactNativeSpec
+  - React-RCTFabric
+  - React-RCTImage
+  - React-RCTLinking
+  - React-RCTNetwork
+  - React-RCTRuntime
+  - React-RCTSettings
+  - React-RCTText
+  - React-RCTVibration
+  - React-RuntimeApple
+  - React-RuntimeCore
+  - React-RuntimeHermes
+  - React-callinvoker
+  - React-cxxreact
+  - React-debug
+  - React-defaultsnativemodule
+  - React-domnativemodule
+  - React-featureflags
+  - React-featureflagsnativemodule
+  - React-graphics
+  - React-hermes
+  - React-idlecallbacksnativemodule
+  - React-jserrorhandler
+  - React-jsi
+  - React-jsiexecutor
+  - React-jsinspector
+  - React-jsinspectorcdp
+  - React-jsinspectornetwork
+  - React-jsinspectortracing
+  - React-jsitooling
+  - React-jsitracing
+  - React-logger
+  - React-microtasksnativemodule
+  - React-oscompat
+  - React-perflogger
+  - React-performancecdpmetrics
+  - React-performancetimeline
+  - React-rendererconsistency
+  - React-renderercss
+  - React-rendererdebug
+  - React-runtimeexecutor
+  - React-runtimescheduler
+  - React-timing
+  - React-utils
+  - React-webperformancenativemodule
+  - ReactAppDependencyProvider
+  - ReactCodegen
+  - ReactCommon
+  - RecaptchaInterop
+  - SocketRocket
+  - Yoga
+  - abseil
+  - boost
+  - fast_float
+  - fmt
+  - gRPC-C++
+  - gRPC-Core
+  - glog
+  - hermes-engine
+  - leveldb-library
+  - nanopb
+  - react-native-image-picker
+  - react-native-print
+  - react-native-safe-area-context
+  - react-native-webview
+
+Downloading dependencies
+
+-> Using AppAuth (1.7.6)
+
+-> Using BoringSSL-GRPC (0.0.37)
+
+-> Using DoubleConversion (1.1.6)
+
+-> Using FBLazyVector (0.82.1)
+
+-> Using Firebase (12.4.0)
+
+-> Using FirebaseAppCheckInterop (12.4.0)
+
+-> Using FirebaseAuth (12.4.0)
+
+-> Using FirebaseAuthInterop (12.4.0)
+
+-> Using FirebaseCore (12.4.0)
+
+-> Using FirebaseCoreExtension (12.4.0)
+
+-> Using FirebaseCoreInternal (12.4.0)
+
+-> Using FirebaseFirestore (12.4.0)
+
+-> Using FirebaseFirestoreInternal (12.4.0)
+
+-> Using FirebaseSharedSwift (12.4.0)
+
+-> Using FirebaseStorage (12.4.0)
+
+-> Using GTMAppAuth (2.0.0)
+
+-> Using GTMSessionFetcher (3.5.0)
+
+-> Using GoogleSignIn (7.0.0)
+
+-> Using GoogleUtilities (8.1.0)
+
+-> Using RCT-Folly (2024.11.18.00)
+
+-> Using RCTDeprecation (0.82.1)
+
+-> Using RCTRequired (0.82.1)
+
+-> Using RCTTypeSafety (0.82.1)
+
+-> Using RNCAsyncStorage (2.2.0)
+
+-> Using RNFBApp (23.5.0)
+
+-> Using RNFBAuth (23.5.0)
+
+-> Using RNFBFirestore (23.5.0)
+
+-> Using RNFBStorage (23.5.0)
+
+-> Using RNGoogleSignin (11.0.1)
+
+-> Using RNSVG (15.15.1)
+
+-> Using RNScreens (4.18.0)
+
+-> Using RNVectorIcons (10.3.0)
+
+-> Using React (0.82.1)
+
+-> Using React-Core (0.82.1)
+
+-> Using React-CoreModules (0.82.1)
+
+-> Using React-Fabric (0.82.1)
+
+-> Using React-FabricComponents (0.82.1)
+
+-> Using React-FabricImage (0.82.1)
+
+-> Using React-ImageManager (0.82.1)
+
+-> Using React-Mapbuffer (0.82.1)
+
+-> Using React-NativeModulesApple (0.82.1)
+
+-> Using React-RCTActionSheet (0.82.1)
+
+-> Using React-RCTAnimation (0.82.1)
+
+-> Using React-RCTAppDelegate (0.82.1)
+
+-> Using React-RCTBlob (0.82.1)
+
+-> Using React-RCTFBReactNativeSpec (0.82.1)
+
+-> Using React-RCTFabric (0.82.1)
+
+-> Using React-RCTImage (0.82.1)
+
+-> Using React-RCTLinking (0.82.1)
+
+-> Using React-RCTNetwork (0.82.1)
+
+-> Using React-RCTRuntime (0.82.1)
+
+-> Using React-RCTSettings (0.82.1)
+
+-> Using React-RCTText (0.82.1)
+
+-> Using React-RCTVibration (0.82.1)
+
+-> Using React-RuntimeApple (0.82.1)
+
+-> Using React-RuntimeCore (0.82.1)
+
+-> Using React-RuntimeHermes (0.82.1)
+
+-> Using React-callinvoker (0.82.1)
+
+-> Using React-cxxreact (0.82.1)
+
+-> Using React-debug (0.82.1)
+
+-> Using React-defaultsnativemodule (0.82.1)
+
+-> Using React-domnativemodule (0.82.1)
+
+-> Using React-featureflags (0.82.1)
+
+-> Using React-featureflagsnativemodule (0.82.1)
+
+-> Using React-graphics (0.82.1)
+
+-> Using React-hermes (0.82.1)
+
+-> Using React-idlecallbacksnativemodule (0.82.1)
+
+-> Using React-jserrorhandler (0.82.1)
+
+-> Using React-jsi (0.82.1)
+
+-> Using React-jsiexecutor (0.82.1)
+
+-> Using React-jsinspector (0.82.1)
+
+-> Using React-jsinspectorcdp (0.82.1)
+
+-> Using React-jsinspectornetwork (0.82.1)
+
+-> Using React-jsinspectortracing (0.82.1)
+
+-> Using React-jsitooling (0.82.1)
+
+-> Using React-jsitracing (0.82.1)
+
+-> Using React-logger (0.82.1)
+
+-> Using React-microtasksnativemodule (0.82.1)
+
+-> Using React-oscompat (0.82.1)
+
+-> Using React-perflogger (0.82.1)
+
+-> Using React-performancecdpmetrics (0.82.1)
+
+-> Using React-performancetimeline (0.82.1)
+
+-> Using React-rendererconsistency (0.82.1)
+
+-> Using React-renderercss (0.82.1)
+
+-> Using React-rendererdebug (0.82.1)
+
+-> Using React-runtimeexecutor (0.82.1)
+
+-> Using React-runtimescheduler (0.82.1)
+
+-> Using React-timing (0.82.1)
+
+-> Using React-utils (0.82.1)
+
+-> Using React-webperformancenativemodule (0.82.1)
+
+-> Using ReactAppDependencyProvider (0.82.1)
+
+-> Using ReactCodegen (0.82.1)
+
+-> Using ReactCommon (0.82.1)
+
+-> Using RecaptchaInterop (101.0.0)
+
+-> Using SocketRocket (0.7.1)
+
+-> Using Yoga (0.0.0)
+
+-> Using abseil (1.20240722.0)
+
+-> Using boost (1.84.0)
+
+-> Using fast_float (8.0.0)
+
+-> Using fmt (11.0.2)
+
+-> Using gRPC-C++ (1.69.0)
+
+-> Using gRPC-Core (1.69.0)
+
+-> Using glog (0.3.5)
+
+-> Using hermes-engine (0.82.1)
+
+-> Using leveldb-library (1.22.6)
+
+-> Using nanopb (3.30910.0)
+
+-> Using react-native-image-picker (8.2.1)
+
+-> Using react-native-print (0.11.0)
+
+-> Using react-native-safe-area-context (5.6.2)
+
+-> Using react-native-webview (13.16.0)
+  - Running pre install hooks
+  - Running pre integrate hooks
+
+Generating Pods project
+  - Creating Pods project
+  - Installing files into Pods project
+    - Adding source files
+    - Adding frameworks
+    - Adding libraries
+    - Adding resources
+    - Adding development pod helper files
+    - Linking headers
+  - Installing Pod Targets
+    - Installing target `AppAuth` iOS 9.0
+      - Generating Info.plist file at `Pods/Target Support Files/AppAuth/ResourceBundle-AppAuthCore_Privacy-AppAuth-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/AppAuth/AppAuth.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/AppAuth/AppAuth-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/AppAuth/AppAuth-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/AppAuth/AppAuth-dummy.m`
+    - Installing target `BoringSSL-GRPC` iOS 10.0
+      - Generating Info.plist file at `Pods/Target Support Files/BoringSSL-GRPC/ResourceBundle-openssl_grpc-BoringSSL-GRPC-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/BoringSSL-GRPC/BoringSSL-GRPC.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/BoringSSL-GRPC/BoringSSL-GRPC-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/BoringSSL-GRPC/BoringSSL-GRPC-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/BoringSSL-GRPC/BoringSSL-GRPC-dummy.m`
+    - Installing target `DoubleConversion` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/DoubleConversion/DoubleConversion.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/DoubleConversion/DoubleConversion-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/DoubleConversion/DoubleConversion-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/DoubleConversion/DoubleConversion-dummy.m`
+    - Installing target `FBLazyVector` iOS 15.1
+    - Installing target `Firebase` iOS 15.0
+    - Installing target `FirebaseAppCheckInterop` iOS 15.0
+      - Generating module map file at `Pods/Target Support Files/FirebaseAppCheckInterop/FirebaseAppCheckInterop.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/FirebaseAppCheckInterop/FirebaseAppCheckInterop-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/FirebaseAppCheckInterop/FirebaseAppCheckInterop-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/FirebaseAppCheckInterop/FirebaseAppCheckInterop-dummy.m`
+    - Installing target `FirebaseAuth` iOS 15.0
+      - Generating Info.plist file at `Pods/Target Support Files/FirebaseAuth/ResourceBundle-FirebaseAuth_Privacy-FirebaseAuth-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/FirebaseAuth/FirebaseAuth.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/FirebaseAuth/FirebaseAuth-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/FirebaseAuth/FirebaseAuth-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/FirebaseAuth/FirebaseAuth-dummy.m`
+    - Installing target `FirebaseAuthInterop` iOS 15.0
+      - Generating module map file at `Pods/Target Support Files/FirebaseAuthInterop/FirebaseAuthInterop.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/FirebaseAuthInterop/FirebaseAuthInterop-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/FirebaseAuthInterop/FirebaseAuthInterop-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/FirebaseAuthInterop/FirebaseAuthInterop-dummy.m`
+    - Installing target `FirebaseCore` iOS 15.0
+      - Generating Info.plist file at `Pods/Target Support Files/FirebaseCore/ResourceBundle-FirebaseCore_Privacy-FirebaseCore-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/FirebaseCore/FirebaseCore.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/FirebaseCore/FirebaseCore-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/FirebaseCore/FirebaseCore-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/FirebaseCore/FirebaseCore-dummy.m`
+    - Installing target `FirebaseCoreExtension` iOS 15.0
+      - Generating Info.plist file at `Pods/Target Support Files/FirebaseCoreExtension/ResourceBundle-FirebaseCoreExtension_Privacy-FirebaseCoreExtension-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/FirebaseCoreExtension/FirebaseCoreExtension.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/FirebaseCoreExtension/FirebaseCoreExtension-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/FirebaseCoreExtension/FirebaseCoreExtension-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/FirebaseCoreExtension/FirebaseCoreExtension-dummy.m`
+    - Installing target `FirebaseCoreInternal` iOS 15.0
+      - Generating Info.plist file at `Pods/Target Support Files/FirebaseCoreInternal/ResourceBundle-FirebaseCoreInternal_Privacy-FirebaseCoreInternal-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/FirebaseCoreInternal/FirebaseCoreInternal.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/FirebaseCoreInternal/FirebaseCoreInternal-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/FirebaseCoreInternal/FirebaseCoreInternal-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/FirebaseCoreInternal/FirebaseCoreInternal-dummy.m`
+    - Installing target `FirebaseFirestore` iOS 15.0
+      - Generating Info.plist file at `Pods/Target Support Files/FirebaseFirestore/ResourceBundle-FirebaseFirestore_Privacy-FirebaseFirestore-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/FirebaseFirestore/FirebaseFirestore.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/FirebaseFirestore/FirebaseFirestore-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/FirebaseFirestore/FirebaseFirestore-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/FirebaseFirestore/FirebaseFirestore-dummy.m`
+    - Installing target `FirebaseFirestoreInternal` iOS 15.0
+      - Generating Info.plist file at `Pods/Target Support Files/FirebaseFirestoreInternal/ResourceBundle-FirebaseFirestoreInternal_Privacy-FirebaseFirestoreInternal-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/FirebaseFirestoreInternal/FirebaseFirestoreInternal.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/FirebaseFirestoreInternal/FirebaseFirestoreInternal-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/FirebaseFirestoreInternal/FirebaseFirestoreInternal-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/FirebaseFirestoreInternal/FirebaseFirestoreInternal-dummy.m`
+    - Installing target `FirebaseSharedSwift` iOS 15.0
+      - Generating module map file at `Pods/Target Support Files/FirebaseSharedSwift/FirebaseSharedSwift.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/FirebaseSharedSwift/FirebaseSharedSwift-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/FirebaseSharedSwift/FirebaseSharedSwift-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/FirebaseSharedSwift/FirebaseSharedSwift-dummy.m`
+    - Installing target `FirebaseStorage` iOS 15.0
+      - Generating module map file at `Pods/Target Support Files/FirebaseStorage/FirebaseStorage.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/FirebaseStorage/FirebaseStorage-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/FirebaseStorage/FirebaseStorage-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/FirebaseStorage/FirebaseStorage-dummy.m`
+    - Installing target `GTMAppAuth` iOS 10.0
+      - Generating module map file at `Pods/Target Support Files/GTMAppAuth/GTMAppAuth.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/GTMAppAuth/GTMAppAuth-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/GTMAppAuth/GTMAppAuth-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/GTMAppAuth/GTMAppAuth-dummy.m`
+    - Installing target `GTMSessionFetcher` iOS 10.0
+      - Generating Info.plist file at `Pods/Target Support Files/GTMSessionFetcher/ResourceBundle-GTMSessionFetcher_Core_Privacy-GTMSessionFetcher-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/GTMSessionFetcher/GTMSessionFetcher.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/GTMSessionFetcher/GTMSessionFetcher-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/GTMSessionFetcher/GTMSessionFetcher-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/GTMSessionFetcher/GTMSessionFetcher-dummy.m`
+    - Installing target `GoogleSignIn` iOS 10.0
+      - Generating Info.plist file at `Pods/Target Support Files/GoogleSignIn/ResourceBundle-GoogleSignIn-GoogleSignIn-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/GoogleSignIn/GoogleSignIn.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/GoogleSignIn/GoogleSignIn-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/GoogleSignIn/GoogleSignIn-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/GoogleSignIn/GoogleSignIn-dummy.m`
+    - Installing target `GoogleUtilities` iOS 12.0
+      - Generating Info.plist file at `Pods/Target Support Files/GoogleUtilities/ResourceBundle-GoogleUtilities_Privacy-GoogleUtilities-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/GoogleUtilities/GoogleUtilities.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/GoogleUtilities/GoogleUtilities-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/GoogleUtilities/GoogleUtilities-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/GoogleUtilities/GoogleUtilities-dummy.m`
+    - Installing target `RCT-Folly` iOS 15.1
+      - Generating Info.plist file at `Pods/Target Support Files/RCT-Folly/ResourceBundle-RCT-Folly_privacy-RCT-Folly-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/RCT-Folly/RCT-Folly.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/RCT-Folly/RCT-Folly-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/RCT-Folly/RCT-Folly-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/RCT-Folly/RCT-Folly-dummy.m`
+    - Installing target `RCTDeprecation` iOS 8.0
+      - Generating module map file at `Pods/Target Support Files/RCTDeprecation/RCTDeprecation.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/RCTDeprecation/RCTDeprecation-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/RCTDeprecation/RCTDeprecation-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/RCTDeprecation/RCTDeprecation-dummy.m`
+    - Installing target `RCTRequired` iOS 15.1
+    - Installing target `RCTTypeSafety` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/RCTTypeSafety/RCTTypeSafety.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/RCTTypeSafety/RCTTypeSafety-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/RCTTypeSafety/RCTTypeSafety-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/RCTTypeSafety/RCTTypeSafety-dummy.m`
+    - Installing target `RNCAsyncStorage` iOS 13.4
+      - Generating Info.plist file at `Pods/Target Support Files/RNCAsyncStorage/ResourceBundle-RNCAsyncStorage_resources-RNCAsyncStorage-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/RNCAsyncStorage/RNCAsyncStorage.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/RNCAsyncStorage/RNCAsyncStorage-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/RNCAsyncStorage/RNCAsyncStorage-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/RNCAsyncStorage/RNCAsyncStorage-dummy.m`
+    - Installing target `RNFBApp` iOS 15.0
+      - Generating module map file at `Pods/Target Support Files/RNFBApp/RNFBApp.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/RNFBApp/RNFBApp-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/RNFBApp/RNFBApp-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/RNFBApp/RNFBApp-dummy.m`
+    - Installing target `RNFBAuth` iOS 15.0
+      - Generating module map file at `Pods/Target Support Files/RNFBAuth/RNFBAuth.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/RNFBAuth/RNFBAuth-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/RNFBAuth/RNFBAuth-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/RNFBAuth/RNFBAuth-dummy.m`
+    - Installing target `RNFBFirestore` iOS 15.0
+      - Generating module map file at `Pods/Target Support Files/RNFBFirestore/RNFBFirestore.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/RNFBFirestore/RNFBFirestore-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/RNFBFirestore/RNFBFirestore-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/RNFBFirestore/RNFBFirestore-dummy.m`
+    - Installing target `RNFBStorage` iOS 15.0
+      - Generating module map file at `Pods/Target Support Files/RNFBStorage/RNFBStorage.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/RNFBStorage/RNFBStorage-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/RNFBStorage/RNFBStorage-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/RNFBStorage/RNFBStorage-dummy.m`
+    - Installing target `RNGoogleSignin` iOS 10.0
+      - Generating module map file at `Pods/Target Support Files/RNGoogleSignin/RNGoogleSignin.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/RNGoogleSignin/RNGoogleSignin-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/RNGoogleSignin/RNGoogleSignin-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/RNGoogleSignin/RNGoogleSignin-dummy.m`
+    - Installing target `RNSVG` iOS 12.4
+      - Generating Info.plist file at `Pods/Target Support Files/RNSVG/ResourceBundle-RNSVGFilters-RNSVG-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/RNSVG/RNSVG.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/RNSVG/RNSVG-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/RNSVG/RNSVG-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/RNSVG/RNSVG-dummy.m`
+    - Installing target `RNScreens` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/RNScreens/RNScreens.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/RNScreens/RNScreens-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/RNScreens/RNScreens-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/RNScreens/RNScreens-dummy.m`
+    - Installing target `RNVectorIcons` iOS 12.0
+      - Generating module map file at `Pods/Target Support Files/RNVectorIcons/RNVectorIcons.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/RNVectorIcons/RNVectorIcons-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/RNVectorIcons/RNVectorIcons-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/RNVectorIcons/RNVectorIcons-dummy.m`
+    - Installing target `React` iOS 15.1
+    - Installing target `React-Core` iOS 15.1
+      - Generating Info.plist file at `Pods/Target Support Files/React-Core/ResourceBundle-React-Core_privacy-React-Core-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/React-Core/React-Core.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-Core/React-Core-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-Core/React-Core-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-Core/React-Core-dummy.m`
+    - Installing target `React-CoreModules` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-CoreModules/React-CoreModules.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-CoreModules/React-CoreModules-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-CoreModules/React-CoreModules-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-CoreModules/React-CoreModules-dummy.m`
+    - Installing target `React-Fabric` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-Fabric/React-Fabric.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-Fabric/React-Fabric-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-Fabric/React-Fabric-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-Fabric/React-Fabric-dummy.m`
+    - Installing target `React-FabricComponents` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-FabricComponents/React-FabricComponents.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-FabricComponents/React-FabricComponents-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-FabricComponents/React-FabricComponents-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-FabricComponents/React-FabricComponents-dummy.m`
+    - Installing target `React-FabricImage` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-FabricImage/React-FabricImage.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-FabricImage/React-FabricImage-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-FabricImage/React-FabricImage-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-FabricImage/React-FabricImage-dummy.m`
+    - Installing target `React-ImageManager` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-ImageManager/React-ImageManager.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-ImageManager/React-ImageManager-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-ImageManager/React-ImageManager-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-ImageManager/React-ImageManager-dummy.m`
+    - Installing target `React-Mapbuffer` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-Mapbuffer/React-Mapbuffer.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-Mapbuffer/React-Mapbuffer-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-Mapbuffer/React-Mapbuffer-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-Mapbuffer/React-Mapbuffer-dummy.m`
+    - Installing target `React-NativeModulesApple` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-NativeModulesApple/React-NativeModulesApple.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-NativeModulesApple/React-NativeModulesApple-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-NativeModulesApple/React-NativeModulesApple-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-NativeModulesApple/React-NativeModulesApple-dummy.m`
+    - Installing target `React-RCTActionSheet` iOS 15.1
+    - Installing target `React-RCTAnimation` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-RCTAnimation/React-RCTAnimation.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-RCTAnimation/React-RCTAnimation-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-RCTAnimation/React-RCTAnimation-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-RCTAnimation/React-RCTAnimation-dummy.m`
+    - Installing target `React-RCTAppDelegate` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-RCTAppDelegate/React-RCTAppDelegate.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-RCTAppDelegate/React-RCTAppDelegate-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-RCTAppDelegate/React-RCTAppDelegate-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-RCTAppDelegate/React-RCTAppDelegate-dummy.m`
+    - Installing target `React-RCTBlob` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-RCTBlob/React-RCTBlob.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-RCTBlob/React-RCTBlob-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-RCTBlob/React-RCTBlob-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-RCTBlob/React-RCTBlob-dummy.m`
+    - Installing target `React-RCTFBReactNativeSpec` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-RCTFBReactNativeSpec/React-RCTFBReactNativeSpec.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-RCTFBReactNativeSpec/React-RCTFBReactNativeSpec-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-RCTFBReactNativeSpec/React-RCTFBReactNativeSpec-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-RCTFBReactNativeSpec/React-RCTFBReactNativeSpec-dummy.m`
+    - Installing target `React-RCTFabric` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-RCTFabric/React-RCTFabric.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-RCTFabric/React-RCTFabric-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-RCTFabric/React-RCTFabric-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-RCTFabric/React-RCTFabric-dummy.m`
+    - Installing target `React-RCTImage` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-RCTImage/React-RCTImage.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-RCTImage/React-RCTImage-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-RCTImage/React-RCTImage-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-RCTImage/React-RCTImage-dummy.m`
+    - Installing target `React-RCTLinking` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-RCTLinking/React-RCTLinking.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-RCTLinking/React-RCTLinking-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-RCTLinking/React-RCTLinking-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-RCTLinking/React-RCTLinking-dummy.m`
+    - Installing target `React-RCTNetwork` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-RCTNetwork/React-RCTNetwork.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-RCTNetwork/React-RCTNetwork-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-RCTNetwork/React-RCTNetwork-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-RCTNetwork/React-RCTNetwork-dummy.m`
+    - Installing target `React-RCTRuntime` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-RCTRuntime/React-RCTRuntime.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-RCTRuntime/React-RCTRuntime-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-RCTRuntime/React-RCTRuntime-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-RCTRuntime/React-RCTRuntime-dummy.m`
+    - Installing target `React-RCTSettings` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-RCTSettings/React-RCTSettings.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-RCTSettings/React-RCTSettings-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-RCTSettings/React-RCTSettings-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-RCTSettings/React-RCTSettings-dummy.m`
+    - Installing target `React-RCTText` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-RCTText/React-RCTText.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-RCTText/React-RCTText-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-RCTText/React-RCTText-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-RCTText/React-RCTText-dummy.m`
+    - Installing target `React-RCTVibration` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-RCTVibration/React-RCTVibration.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-RCTVibration/React-RCTVibration-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-RCTVibration/React-RCTVibration-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-RCTVibration/React-RCTVibration-dummy.m`
+    - Installing target `React-RuntimeApple` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-RuntimeApple/React-RuntimeApple.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-RuntimeApple/React-RuntimeApple-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-RuntimeApple/React-RuntimeApple-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-RuntimeApple/React-RuntimeApple-dummy.m`
+    - Installing target `React-RuntimeCore` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-RuntimeCore/React-RuntimeCore.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-RuntimeCore/React-RuntimeCore-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-RuntimeCore/React-RuntimeCore-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-RuntimeCore/React-RuntimeCore-dummy.m`
+    - Installing target `React-RuntimeHermes` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-RuntimeHermes/React-RuntimeHermes.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-RuntimeHermes/React-RuntimeHermes-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-RuntimeHermes/React-RuntimeHermes-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-RuntimeHermes/React-RuntimeHermes-dummy.m`
+    - Installing target `React-callinvoker` iOS 15.1
+    - Installing target `React-cxxreact` iOS 15.1
+      - Generating Info.plist file at `Pods/Target Support Files/React-cxxreact/ResourceBundle-React-cxxreact_privacy-React-cxxreact-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/React-cxxreact/React-cxxreact.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-cxxreact/React-cxxreact-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-cxxreact/React-cxxreact-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-cxxreact/React-cxxreact-dummy.m`
+    - Installing target `React-debug` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-debug/React-debug.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-debug/React-debug-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-debug/React-debug-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-debug/React-debug-dummy.m`
+    - Installing target `React-defaultsnativemodule` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-defaultsnativemodule/React-defaultsnativemodule.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-defaultsnativemodule/React-defaultsnativemodule-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-defaultsnativemodule/React-defaultsnativemodule-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-defaultsnativemodule/React-defaultsnativemodule-dummy.m`
+    - Installing target `React-domnativemodule` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-domnativemodule/React-domnativemodule.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-domnativemodule/React-domnativemodule-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-domnativemodule/React-domnativemodule-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-domnativemodule/React-domnativemodule-dummy.m`
+    - Installing target `React-featureflags` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-featureflags/React-featureflags.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-featureflags/React-featureflags-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-featureflags/React-featureflags-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-featureflags/React-featureflags-dummy.m`
+    - Installing target `React-featureflagsnativemodule` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-featureflagsnativemodule/React-featureflagsnativemodule.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-featureflagsnativemodule/React-featureflagsnativemodule-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-featureflagsnativemodule/React-featureflagsnativemodule-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-featureflagsnativemodule/React-featureflagsnativemodule-dummy.m`
+    - Installing target `React-graphics` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-graphics/React-graphics.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-graphics/React-graphics-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-graphics/React-graphics-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-graphics/React-graphics-dummy.m`
+    - Installing target `React-hermes` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-hermes/React-hermes.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-hermes/React-hermes-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-hermes/React-hermes-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-hermes/React-hermes-dummy.m`
+    - Installing target `React-idlecallbacksnativemodule` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-idlecallbacksnativemodule/React-idlecallbacksnativemodule.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-idlecallbacksnativemodule/React-idlecallbacksnativemodule-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-idlecallbacksnativemodule/React-idlecallbacksnativemodule-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-idlecallbacksnativemodule/React-idlecallbacksnativemodule-dummy.m`
+    - Installing target `React-jserrorhandler` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-jserrorhandler/React-jserrorhandler.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-jserrorhandler/React-jserrorhandler-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-jserrorhandler/React-jserrorhandler-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-jserrorhandler/React-jserrorhandler-dummy.m`
+    - Installing target `React-jsi` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-jsi/React-jsi.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-jsi/React-jsi-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-jsi/React-jsi-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-jsi/React-jsi-dummy.m`
+    - Installing target `React-jsiexecutor` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-jsiexecutor/React-jsiexecutor.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-jsiexecutor/React-jsiexecutor-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-jsiexecutor/React-jsiexecutor-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-jsiexecutor/React-jsiexecutor-dummy.m`
+    - Installing target `React-jsinspector` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-jsinspector/React-jsinspector.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-jsinspector/React-jsinspector-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-jsinspector/React-jsinspector-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-jsinspector/React-jsinspector-dummy.m`
+    - Installing target `React-jsinspectorcdp` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-jsinspectorcdp/React-jsinspectorcdp.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-jsinspectorcdp/React-jsinspectorcdp-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-jsinspectorcdp/React-jsinspectorcdp-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-jsinspectorcdp/React-jsinspectorcdp-dummy.m`
+    - Installing target `React-jsinspectornetwork` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-jsinspectornetwork/React-jsinspectornetwork.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-jsinspectornetwork/React-jsinspectornetwork-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-jsinspectornetwork/React-jsinspectornetwork-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-jsinspectornetwork/React-jsinspectornetwork-dummy.m`
+    - Installing target `React-jsinspectortracing` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-jsinspectortracing/React-jsinspectortracing.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-jsinspectortracing/React-jsinspectortracing-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-jsinspectortracing/React-jsinspectortracing-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-jsinspectortracing/React-jsinspectortracing-dummy.m`
+    - Installing target `React-jsitooling` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-jsitooling/React-jsitooling.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-jsitooling/React-jsitooling-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-jsitooling/React-jsitooling-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-jsitooling/React-jsitooling-dummy.m`
+    - Installing target `React-jsitracing` iOS 15.1
+    - Installing target `React-logger` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-logger/React-logger.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-logger/React-logger-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-logger/React-logger-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-logger/React-logger-dummy.m`
+    - Installing target `React-microtasksnativemodule` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-microtasksnativemodule/React-microtasksnativemodule.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-microtasksnativemodule/React-microtasksnativemodule-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-microtasksnativemodule/React-microtasksnativemodule-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-microtasksnativemodule/React-microtasksnativemodule-dummy.m`
+    - Installing target `React-oscompat` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-oscompat/React-oscompat.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-oscompat/React-oscompat-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-oscompat/React-oscompat-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-oscompat/React-oscompat-dummy.m`
+    - Installing target `React-perflogger` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-perflogger/React-perflogger.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-perflogger/React-perflogger-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-perflogger/React-perflogger-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-perflogger/React-perflogger-dummy.m`
+    - Installing target `React-performancecdpmetrics` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-performancecdpmetrics/React-performancecdpmetrics.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-performancecdpmetrics/React-performancecdpmetrics-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-performancecdpmetrics/React-performancecdpmetrics-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-performancecdpmetrics/React-performancecdpmetrics-dummy.m`
+    - Installing target `React-performancetimeline` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-performancetimeline/React-performancetimeline.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-performancetimeline/React-performancetimeline-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-performancetimeline/React-performancetimeline-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-performancetimeline/React-performancetimeline-dummy.m`
+    - Installing target `React-rendererconsistency` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-rendererconsistency/React-rendererconsistency.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-rendererconsistency/React-rendererconsistency-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-rendererconsistency/React-rendererconsistency-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-rendererconsistency/React-rendererconsistency-dummy.m`
+    - Installing target `React-renderercss` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-renderercss/React-renderercss.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-renderercss/React-renderercss-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-renderercss/React-renderercss-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-renderercss/React-renderercss-dummy.m`
+    - Installing target `React-rendererdebug` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-rendererdebug/React-rendererdebug.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-rendererdebug/React-rendererdebug-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-rendererdebug/React-rendererdebug-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-rendererdebug/React-rendererdebug-dummy.m`
+    - Installing target `React-runtimeexecutor` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-runtimeexecutor/React-runtimeexecutor.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-runtimeexecutor/React-runtimeexecutor-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-runtimeexecutor/React-runtimeexecutor-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-runtimeexecutor/React-runtimeexecutor-dummy.m`
+    - Installing target `React-runtimescheduler` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-runtimescheduler/React-runtimescheduler.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-runtimescheduler/React-runtimescheduler-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-runtimescheduler/React-runtimescheduler-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-runtimescheduler/React-runtimescheduler-dummy.m`
+    - Installing target `React-timing` iOS 15.1
+    - Installing target `React-utils` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-utils/React-utils.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-utils/React-utils-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-utils/React-utils-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-utils/React-utils-dummy.m`
+    - Installing target `React-webperformancenativemodule` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/React-webperformancenativemodule/React-webperformancenativemodule.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/React-webperformancenativemodule/React-webperformancenativemodule-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/React-webperformancenativemodule/React-webperformancenativemodule-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/React-webperformancenativemodule/React-webperformancenativemodule-dummy.m`
+    - Installing target `ReactAppDependencyProvider` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/ReactAppDependencyProvider/ReactAppDependencyProvider.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/ReactAppDependencyProvider/ReactAppDependencyProvider-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/ReactAppDependencyProvider/ReactAppDependencyProvider-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/ReactAppDependencyProvider/ReactAppDependencyProvider-dummy.m`
+    - Installing target `ReactCodegen` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/ReactCodegen/ReactCodegen.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/ReactCodegen/ReactCodegen-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/ReactCodegen/ReactCodegen-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/ReactCodegen/ReactCodegen-dummy.m`
+    - Installing target `ReactCommon` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/ReactCommon/ReactCommon.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/ReactCommon/ReactCommon-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/ReactCommon/ReactCommon-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/ReactCommon/ReactCommon-dummy.m`
+    - Installing target `RecaptchaInterop` iOS 11.0
+      - Generating module map file at `Pods/Target Support Files/RecaptchaInterop/RecaptchaInterop.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/RecaptchaInterop/RecaptchaInterop-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/RecaptchaInterop/RecaptchaInterop-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/RecaptchaInterop/RecaptchaInterop-dummy.m`
+    - Installing target `SocketRocket` iOS 11.0
+      - Generating module map file at `Pods/Target Support Files/SocketRocket/SocketRocket.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/SocketRocket/SocketRocket-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/SocketRocket/SocketRocket-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/SocketRocket/SocketRocket-dummy.m`
+    - Installing target `Yoga` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/Yoga/Yoga.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/Yoga/Yoga-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/Yoga/Yoga-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/Yoga/Yoga-dummy.m`
+    - Installing target `abseil` iOS 9.0
+      - Generating Info.plist file at `Pods/Target Support Files/abseil/ResourceBundle-xcprivacy-abseil-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/abseil/abseil.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/abseil/abseil-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/abseil/abseil-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/abseil/abseil-dummy.m`
+    - Installing target `boost` iOS 15.1
+      - Generating Info.plist file at `Pods/Target Support Files/boost/ResourceBundle-boost_privacy-boost-Info.plist`
+    - Installing target `fast_float` iOS 15.1
+    - Installing target `fmt` iOS 15.1
+      - Generating module map file at `Pods/Target Support Files/fmt/fmt.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/fmt/fmt-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/fmt/fmt-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/fmt/fmt-dummy.m`
+    - Installing target `gRPC-C++` iOS 11.0
+      - Generating Info.plist file at `Pods/Target Support Files/gRPC-C++/ResourceBundle-gRPCCertificates-Cpp-gRPC-C++-Info.plist`
+      - Generating Info.plist file at `Pods/Target Support Files/gRPC-C++/ResourceBundle-grpcpp-gRPC-C++-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/gRPC-C++/gRPC-C++.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/gRPC-C++/gRPC-C++-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/gRPC-C++/gRPC-C++-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/gRPC-C++/gRPC-C++-dummy.m`
+    - Installing target `gRPC-Core` iOS 11.0
+      - Generating Info.plist file at `Pods/Target Support Files/gRPC-Core/ResourceBundle-grpc-gRPC-Core-Info.plist`
+      - Copying module map file to `Pods/Target Support Files/gRPC-Core/gRPC-Core.modulemap`
+      - Generating Info.plist file at `Pods/Target Support Files/gRPC-Core/gRPC-Core-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/gRPC-Core/gRPC-Core-dummy.m`
+    - Installing target `glog` iOS 15.1
+      - Generating Info.plist file at `Pods/Target Support Files/glog/ResourceBundle-glog_privacy-glog-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/glog/glog.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/glog/glog-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/glog/glog-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/glog/glog-dummy.m`
+    - Installing target `hermes-engine` iOS 15.1
+    - Installing target `leveldb-library` iOS 11.0
+      - Generating Info.plist file at `Pods/Target Support Files/leveldb-library/ResourceBundle-leveldb_Privacy-leveldb-library-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/leveldb-library/leveldb-library.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/leveldb-library/leveldb-library-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/leveldb-library/leveldb-library-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/leveldb-library/leveldb-library-dummy.m`
+    - Installing target `nanopb` iOS 12.0
+      - Generating Info.plist file at `Pods/Target Support Files/nanopb/ResourceBundle-nanopb_Privacy-nanopb-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/nanopb/nanopb.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/nanopb/nanopb-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/nanopb/nanopb-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/nanopb/nanopb-dummy.m`
+    - Installing target `react-native-image-picker` iOS 9.0
+      - Generating Info.plist file at `Pods/Target Support Files/react-native-image-picker/ResourceBundle-RNImagePickerPrivacyInfo-react-native-image-picker-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/react-native-image-picker/react-native-image-picker.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/react-native-image-picker/react-native-image-picker-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/react-native-image-picker/react-native-image-picker-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/react-native-image-picker/react-native-image-picker-dummy.m`
+    - Installing target `react-native-print` iOS 8.0
+      - Generating module map file at `Pods/Target Support Files/react-native-print/react-native-print.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/react-native-print/react-native-print-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/react-native-print/react-native-print-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/react-native-print/react-native-print-dummy.m`
+    - Installing target `react-native-safe-area-context` iOS 12.4
+      - Generating module map file at `Pods/Target Support Files/react-native-safe-area-context/react-native-safe-area-context.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/react-native-safe-area-context/react-native-safe-area-context-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/react-native-safe-area-context/react-native-safe-area-context-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/react-native-safe-area-context/react-native-safe-area-context-dummy.m`
+    - Installing target `react-native-webview` iOS 11.0
+      - Generating module map file at `Pods/Target Support Files/react-native-webview/react-native-webview.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/react-native-webview/react-native-webview-umbrella.h`
+      - Generating Info.plist file at `Pods/Target Support Files/react-native-webview/react-native-webview-Info.plist`
+      - Generating dummy source at `Pods/Target Support Files/react-native-webview/react-native-webview-dummy.m`
+  - Installing Aggregate Targets
+    - Installing target `Pods-MedInfera` iOS 15.1
+      - Generating Info.plist file at `Pods/Target Support Files/Pods-MedInfera/Pods-MedInfera-Info.plist`
+      - Generating module map file at `Pods/Target Support Files/Pods-MedInfera/Pods-MedInfera.modulemap`
+      - Generating umbrella header at `Pods/Target Support Files/Pods-MedInfera/Pods-MedInfera-umbrella.h`
+      - Generating dummy source at `Pods/Target Support Files/Pods-MedInfera/Pods-MedInfera-dummy.m`
+  - Integrating targets
+
+Integrating target `React-RCTFBReactNativeSpec`
+    Adding Build Phase '[CP-User] [RN]Check FBReactNativeSpec' to project.
+
+Integrating target `ReactCodegen`
+    Adding Build Phase '[CP-User] Generate Specs' to project.
+
+Integrating target `hermes-engine`
+    Adding Build Phase '[CP] Copy XCFrameworks' to project.
+    Adding Build Phase '[CP-User] [Hermes] Replace Hermes for the right configuration, if needed' to project.
+  - Stabilizing target UUIDs
+  - Running post install hooks
+Setting USE_HERMES build settings
+Setting REACT_NATIVE_PATH build settings
+Setting SWIFT_ACTIVE_COMPILATION_CONDITIONS build settings
+[Ccache]: Removing Ccache from CC, LD, CXX & LDPLUSPLUS build settings
+[SPM] Cleaning old SPM dependencies from Pods project
+[SPM] Adding SPM dependencies to Pods project
+[Privacy Manifest Aggregation] Appending aggregated reasons to existing PrivacyInfo.xcprivacy file.
+[Privacy Manifest Aggregation] Reading .xcprivacy files to aggregate all used Required Reason APIs.
+Setting CLANG_CXX_LANGUAGE_STANDARD to c++20 on /Users/sudesevim/Projects/MedInfera/ios/MedInfera.xcodeproj
+
+==================== DEPRECATION NOTICE =====================
+Calling `pod install` directly is deprecated in React Native
+because we are moving away from Cocoapods toward alternative
+solutions to build the project.
+* If you are using Expo, please run:
+`npx expo run:ios`
+* If you are using the Community CLI, please run:
+`yarn ios`
+=============================================================
+
+Pod install took 16 [s] to run
+    - Podfile
+  - Writing Xcode project file to `Pods/Pods.xcodeproj`
+  Cleaning up sandbox directory
+
+Integrating client project
+
+Integrating target `Pods-MedInfera` (`MedInfera.xcodeproj` project)
+  - Running post integrate hooks
+  - Writing Lockfile in `Podfile.lock`
+  - Writing Manifest in `Pods/Manifest.lock`
+
+-> Pod installation complete! There are 88 dependencies from the Podfile and 110 total pods installed.

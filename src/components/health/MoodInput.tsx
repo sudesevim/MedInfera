@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
   },
   emojiButtonSelected: {
     backgroundColor: '#dbeafe',
-    borderColor: '#3b82f6',
+    borderColor: colors.mint.primary,
   },
   emojiIcon: {
     fontSize: 28,
@@ -161,14 +161,14 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   addButtonFull: {
-    backgroundColor: '#3b82f6',
+    backgroundColor: colors.mint.primary,
     borderRadius: 12,
     paddingVertical: 16,
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%',
     marginTop: 8,
-    shadowColor: '#3b82f6',
+    shadowColor: colors.mint.primary,
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
     shadowRadius: 8,

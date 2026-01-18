@@ -87,7 +87,7 @@ export const SimpleInput: React.FC<SimpleInputProps> = ({
                     ]}
                     onPress={() => handleIconSelect(option.value)}
                   >
-                    <Icon name={option.icon} size={24} color={selectedIcon === option.value ? (iconColor || '#3b82f6') : '#6b7280'} />
+                    <Icon name={option.icon} size={24} color={selectedIcon === option.value ? (iconColor || colors.mint.primary) : '#6b7280'} />
                     <Text style={[
                       styles.iconLabel,
                       selectedIcon === option.value && styles.iconLabelSelected,
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
   },
   iconButtonSelected: {
     backgroundColor: '#dbeafe',
-    borderColor: '#3b82f6',
+    borderColor: colors.mint.primary,
   },
   iconLabel: {
     fontSize: 11,
@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   iconLabelSelected: {
-    color: '#3b82f6',
+    color: colors.mint.primary,
     fontWeight: '600',
   },
   inputFull: {
@@ -191,14 +191,14 @@ const styles = StyleSheet.create({
     marginTop: 0,
   },
   addButtonFull: {
-    backgroundColor: '#3b82f6',
+    backgroundColor: colors.mint.primary,
     borderRadius: 12,
     paddingVertical: 16,
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%',
     marginTop: 8,
-    shadowColor: '#3b82f6',
+    shadowColor: colors.mint.primary,
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
     shadowRadius: 8,

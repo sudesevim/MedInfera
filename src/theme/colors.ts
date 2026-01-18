@@ -3,7 +3,7 @@ export const colors = {
   // Primary Purple/Violet shades
   primary: {
     50: '#faf5ff',
-    100: '#f3e8ff',
+    100: '#e5daf2',
     200: '#e9d5ff',
     300: '#d8b4fe',
     400: '#c084fc',
@@ -42,6 +42,14 @@ export const colors = {
     900: '#701a75',
   },
   
+  // Mint/Teal Accent
+  mint: {
+    primary: '#2DD4BF',    // Main mint
+    soft: '#A7F3D0',       // Soft mint
+    light: '#CCFBF1',      // Very light mint
+    dark: '#14B8A6',       // Dark teal
+  },
+  
   // Neutral grays
   gray: {
     50: '#fafafa',
@@ -60,10 +68,10 @@ export const colors = {
   success: '#10b981',
   error: '#ef4444',
   warning: '#f59e0b',
-  info: '#3b82f6',
+  info: '#2DD4BF',  // Mint color for info
   
   // Background
-  background: '#faf5ff',  // Light purple tint
+  background: '#faf5ff', 
   surface: '#ffffff',
   
   // Text
@@ -81,5 +89,6 @@ export const gradients = {
   secondary: ['#9333ea', '#6366f1'],
   accent: ['#d946ef', '#a855f7'],
   sunset: ['#f0abfc', '#c084fc', '#a855f7'],
+  purpleToMint: ['#A855F7', '#2DD4BF'],  // Purple to Mint gradient
 };
 
